@@ -1,0 +1,593 @@
+{
+    "sections": [
+        {
+            "name": "beforeMain",
+            "elements": [
+                {
+                    "element": "textElement",
+                    "params": {
+                        "text": {
+                            "en": "Back ",
+                            "el": "Πίσω"
+                        },
+                        "type": "p",
+                        "lang": "en",
+                        "id": "govcy-test-25"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "main",
+            "elements": [
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<h2>Hint</h2>"
+                        },
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "hint",
+                    "params": {
+                        "hint": {
+                            "en": "This is the hint element by itself ",
+                            "el": "Περιεχομένο"
+                        },
+                        "lang": "en",
+                        "classes": "govcy-test-class",
+                        "id": "govcy-test-2"
+                    }
+                },
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<hr>"
+                        },
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "textElement",
+                    "params": {
+                        "text": {
+                            "en": "Label "
+                        },
+                        "type": "h2",
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "label",
+                    "params": {
+                        "label": {
+                            "en": "This is the label by <b>itself</b>. Options classes, for, id, isPrimary:false",
+                            "el": "Περιεχομένο"
+                        },
+                        "lang": "en",
+                        "classes": "govcy-test-class",
+                        "for": "govcy-label-for-id",
+                        "id": "govcy-test-3",
+                        "isPrimary": false
+                    }
+                },
+                {
+                    "element": "label",
+                    "params": {
+                        "label": {
+                            "en": "This is the label by <b>itself</b>. Options for, isPrimary, isPageHeading, isHTML, id ",
+                            "el": "Περιεχομένο"
+                        },
+                        "lang": "en",
+                        "for": "govcy-label-for-id",
+                        "id": "govcy-test-4",
+                        "isPrimary": true,
+                        "isPageHeading": true,
+                        "isHTML": true
+                    }
+                },
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<hr><h2>Legend</h2>"
+                        },
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "legend",
+                    "params": {
+                        "legend": {
+                            "en": "This is the legend by itself. Options isPageHeading, classes, id",
+                            "el": "Περιεχομένο"
+                        },
+                        "lang": "en",
+                        "id": "govcy-test-5",
+                        "isPageHeading": true,
+                        "classes": "govcy-test-class"
+                    }
+                },
+                {
+                    "element": "legend",
+                    "params": {
+                        "legend": {
+                            "en": "This is the legend by itself. Options isPageHeading:false, id",
+                            "el": "Περιεχομένο"
+                        },
+                        "lang": "en",
+                        "id": "govcy-test-6",
+                        "isPageHeading": false
+                    }
+                },
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<hr><h2>Button</h2>"
+                        },
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "button",
+                    "params": {
+                        "text": {
+                            "en": "Primary default options",
+                            "el": "Περιεχομένο"
+                        },
+                        "lang": "en",
+                        "id": "govcy-test-7"
+                    }
+                },
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<br>"
+                        },
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "button",
+                    "params": {
+                        "text": {
+                            "en": "Options variant:secondary, type:submit, classes:govcy-test-class ",
+                            "el": "Περιεχομένο"
+                        },
+                        "lang": "en",
+                        "variant": "secondary",
+                        "type": "submit",
+                        "classes": "govcy-test-class",
+                        "id": "govcy-test-8"
+                    }
+                },
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<br>"
+                        },
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "button",
+                    "params": {
+                        "text": {
+                            "en": "Options variant:success",
+                            "el": "Περιεχομένο"
+                        },
+                        "lang": "en",
+                        "variant": "success",
+                        "id": "govcy-test-9"
+                    }
+                },
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<br>"
+                        },
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<hr><h2>Form control and Error Message</h2>"
+                        },
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "form",
+                    "params": {
+                        "classes": "govcy-test-class",
+                        "id": "govcy-test-13",
+                        "elements": [
+                            {
+                                "element": "formControl",
+                                "params": {
+                                    "isError": true,
+                                    "classes": "govcy-test-class",
+                                    "id": "govcy-test-12",
+                                    "elements": [
+                                        {
+                                            "element": "errorMessage",
+                                            "params": {
+                                                "message": {
+                                                    "en": "Content",
+                                                    "el": "Error message. Options id, classes. default lang"
+                                                },
+                                                "classes": "govcy-test-class",
+                                                "id": "govcy-test-10"
+                                            }
+                                        },
+                                        {
+                                            "element": "errorMessage",
+                                            "params": {
+                                                "message": {
+                                                    "en": "Error message. Options id, lang: en",
+                                                    "el": "Περιεχομένο"
+                                                },
+                                                "lang": "en",
+                                                "id": "govcy-test-11"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "element": "form",
+                    "params": {
+                        "action": "test-action",
+                        "id": "govcy-test-14",
+                        "elements": [
+                            {
+                                "element": "formControl",
+                                "params": {
+                                    "id": "govcy-test-15",
+                                    "elements": [
+                                        {
+                                            "element": "htmlElement",
+                                            "params": {
+                                                "text": {
+                                                    "en": "Form with action"
+                                                },
+                                                "lang": "en"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<hr><h2>Select</h2>"
+                        },
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "form",
+                    "params": {
+                        "elements": [
+                            {
+                                "element": "select",
+                                "params": {
+                                    "label": {
+                                        "en": "Sort by",
+                                        "el": "Περιεχομένο"
+                                    },
+                                    "lang": "en",
+                                    "id": "govcy-test-17",
+                                    "name": "govcy-test-17",
+                                    "items": [
+                                        {
+                                            "value": "",
+                                            "text": {
+                                                "en": "None",
+                                                "el": "Περιεχομένο"
+                                            }
+                                        },
+                                        {
+                                            "value": "published",
+                                            "text": {
+                                                "en": "Recently published",
+                                                "el": "Περιεχομένο"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "element": "select",
+                                "params": {
+                                    "label": {
+                                        "en": "Sort by",
+                                        "el": "Περιεχομένο"
+                                    },
+                                    "error": {
+                                        "en": "Error message",
+                                        "el": "Περιεχομένο"
+                                    },
+                                    "hint": {
+                                        "en": "Hint message",
+                                        "el": "Περιεχομένο"
+                                    },
+                                    "lang": "en",
+                                    "id": "govcy-test-18",
+                                    "name": "govcy-test-18",
+                                    "items": [
+                                        {
+                                            "value": "",
+                                            "text": {
+                                                "en": "None",
+                                                "el": "Περιεχομένο"
+                                            }
+                                        },
+                                        {
+                                            "value": "published",
+                                            "text": {
+                                                "en": "Recently published",
+                                                "el": "Περιεχομένο"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "element": "select",
+                                "params": {
+                                    "label": {
+                                        "en": "Sort by",
+                                        "el": "Περιεχομένο"
+                                    },
+                                    "error": {
+                                        "en": "Error message",
+                                        "el": "Περιεχομένο"
+                                    },
+                                    "hint": {
+                                        "en": "Hint message",
+                                        "el": "Περιεχομένο"
+                                    },
+                                    "lang": "en",
+                                    "id": "govcy-test-19",
+                                    "name": "govcy-test-19",
+                                    "isPageHeading": true,
+                                    "items": [
+                                        {
+                                            "value": "",
+                                            "text": {
+                                                "en": "None",
+                                                "el": "Περιεχομένο"
+                                            }
+                                        },
+                                        {
+                                            "value": "published",
+                                            "text": {
+                                                "en": "Recently published",
+                                                "el": "Περιεχομένο"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "element": "select",
+                                "params": {
+                                    "label": {
+                                        "en": "Sort by",
+                                        "el": "Περιεχομένο"
+                                    },
+                                    "hint": {
+                                        "en": "Hint message",
+                                        "el": "Περιεχομένο"
+                                    },
+                                    "lang": "en",
+                                    "id": "govcy-test-20",
+                                    "name": "govcy-test-20",
+                                    "items": [
+                                        {
+                                            "value": "",
+                                            "text": {
+                                                "en": "None",
+                                                "el": "Περιεχομένο"
+                                            }
+                                        },
+                                        {
+                                            "value": "published",
+                                            "text": {
+                                                "en": "Recently published",
+                                                "el": "Περιεχομένο"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "element": "select",
+                                "params": {
+                                    "label": {
+                                        "en": "Sort by",
+                                        "el": "Περιεχομένο label"
+                                    },
+                                    "error": {
+                                        "en": "Error message",
+                                        "el": "Περιεχομένο error"
+                                    },
+                                    "hint": {
+                                        "en": "Hint message",
+                                        "el": "Περιεχομένο hint"
+                                    },
+                                    "lang": "el",
+                                    "id": "govcy-test-21",
+                                    "name": "govcy-test-21",
+                                    "items": [
+                                        {
+                                            "value": "",
+                                            "text": {
+                                                "en": "None",
+                                                "el": "Κανένα"
+                                            }
+                                        },
+                                        {
+                                            "value": "published",
+                                            "text": {
+                                                "en": "Recently published",
+                                                "el": "Πρόσφατα"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<hr><h2>Form and form control with elements array</h2>"
+                        },
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "form",
+                    "params": {
+                        "id": "govcy-test-22",
+                        "elements": [
+                            {
+                                "element": "formControl",
+                                "params": {
+                                    "id": "govcy-test-23",
+                                    "elements": [
+                                        {
+                                            "element": "select",
+                                            "params": {
+                                                "label": {
+                                                    "en": "Sort by",
+                                                    "el": "Περιεχομένο"
+                                                },
+                                                "lang": "en",
+                                                "id": "govcy-test-23a",
+                                                "name": "govcy-test-23a",
+                                                "items": [
+                                                    {
+                                                        "value": "",
+                                                        "text": {
+                                                            "en": "None",
+                                                            "el": "Περιεχομένο"
+                                                        }
+                                                    },
+                                                    {
+                                                        "value": "published",
+                                                        "text": {
+                                                            "en": "Recently published",
+                                                            "el": "Περιεχομένο"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "element": "button",
+                                            "params": {
+                                                "text": {
+                                                    "en": "Button 1",
+                                                    "el": "Κουμπί 1"
+                                                },
+                                                "lang": "en",
+                                                "id": "govcy-test-23b"
+                                            }
+                                        },
+                                        {
+                                            "element": "button",
+                                            "params": {
+                                                "text": {
+                                                    "en": "Button 2",
+                                                    "el": "Κουμπί 2"
+                                                },
+                                                "variant": "secondary",
+                                                "lang": "en",
+                                                "id": "govcy-test-23c"
+                                            }
+                                        },
+                                        {
+                                            "element": "button",
+                                            "params": {
+                                                "text": {
+                                                    "en": "Button 3",
+                                                    "el": "Κουμπί 3"
+                                                },
+                                                "variant": "success",
+                                                "lang": "en",
+                                                "id": "govcy-test-23d"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<hr><h2>Text element</h2>"
+                        },
+                        "lang": "en"
+                    }
+                },
+                {
+                    "element": "textElement",
+                    "params": {
+                        "text": {
+                            "en": "Default content ",
+                            "el": "Default Περιεχομένο"
+                        },
+                        "lang": "en",
+                        "classes": "govcy-test-class",
+                        "id": "govcy-test-24a"
+                    }
+                },
+                {
+                    "element": "textElement",
+                    "params": {
+                        "text": {
+                            "en": "Default content ",
+                            "el": "Default Περιεχομένο"
+                        },
+                        "type": "h3",
+                        "lang": "el",
+                        "id": "govcy-test-24b"
+                    }
+                },
+                {
+                    "element": "htmlElement",
+                    "params": {
+                        "text": {
+                            "en": "<hr><h2>HERE</h2>"
+                        },
+                        "lang": "en"
+                    }
+                }
+            ]
+        }
+    ]
+}

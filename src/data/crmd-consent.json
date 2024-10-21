@@ -1,0 +1,766 @@
+{
+  "site" : {
+      "id" : "crmd-consent",
+      "lang" : "el",
+      "title" : {"en":"Service title", "el":"Υπηρεσία συγκατάθεσης"}, 
+      "headerTitle" : {"en":"Header title", "el":"Υπηρεσία συγκατάθεσης"},
+      "description" : {"en":"Service description", "el":"Υπηρεσία συγκατάθεσης γονέων για έκδοση και επανέκδοση εγγράφων ανηλίκων"},
+      "url" : "https://gov.cy",
+      "isTesting" : true,
+      "cdn" : {
+          "dist" : "https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist",
+          "cssIntegrity" : "sha384-1zLHWOtnS0hOIz5mVEPZp0UH5gUE6eo0CQcCGA3sF2TyYhHyKOd3Ni8Iy/NjEASU",
+          "jsIntegrity" : "sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+"
+      }
+  },
+  "pages": [
+      {
+          "pageData": {
+              "url": "",
+              "title" : {"en": "Home page", "el": "Υπηρεσία συγκατάθεσης"},
+              "layout" : "layouts/govcyBase.njk", 
+              "mainLayout" : "two-thirds"
+          },
+          "pageTemplate": {
+              "sections" :[
+                  {
+                      "name": "main",
+                      "elements": [
+                        {
+                            "element": "textElement",
+                            "params": {
+                                "text": {
+                                    "en": "Header 1",
+                                    "el": "Υπηρεσία συγκατάθεσης"
+                                },
+                                "type" :"h1"
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params": {
+                                "text": {
+                                    "en": "Header 2",
+                                    "el": "Τι κάνει αυτή η υπηρεσία"
+                                },
+                                "type" :"h2"
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params": {
+                                "text": {
+                                    "en": "Paragraph",
+                                    "el": "Μπορείτε να δώσετε την συγκατάθεση σας για την έκδοση ή επανέκδοση εγγράφων ανηλίκων κάτω των 12 χρόνων."
+                                }
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params": {
+                                "text": {
+                                    "en": "Header 2",
+                                    "el": "Για ποιους είναι η υπηρεσία"
+                                },
+                                "type" :"h2"
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params": {
+                                "text": {
+                                    "en": "Paragraph",
+                                    "el": "Μπορείτε να χρησιμοποιήσετε την υπηρεσία αν:"
+                                }
+                            }
+                        },
+                        {
+                            "element": "htmlElement",
+                            "params": {
+                                "text": {
+                                    "en": "Paragraph",
+                                    "el": "<ul><li>είστε πάνω από 18 χρόνων</li><li>είστε Κύπριος ή Κύπρια</li></ul>"
+                                }
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params": {
+                                "text": {
+                                    "en": "Header 2",
+                                    "el": "Τι θα χρειαστείτε για να χρησιμοποιήσετε την υπηρεσία"
+                                },
+                                "type" :"h2"
+                            }
+                        },
+                        {
+                            "element": "htmlElement",
+                            "params": {
+                                "text": {
+                                    "en": "Paragraph",
+                                    "el": "<p>Θα χρειαστείτε <a href=\"#\">λογαριασμό στο CY Login</a> (πρώην Αριάδνη). Χρειάζεται να είναι <a href=\"#\">ταυτοποιημένος</a>.</p>"
+                                }
+                            }
+                        },
+                        {
+                            "element": "form",
+                            "params" : {
+                                "elements" :[
+                                    {
+                                        "element": "button",
+                                        "params": {
+                                            "text": {
+                                                "en": "Continue",
+                                                "el": "Συνέχεια"
+                                            },
+                                            "type": "button",
+                                            "prototypeNavigate":"login"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params": {
+                                "text": {
+                                    "en": "Header 2",
+                                    "el": "Ζητήστε βοήθεια και καθοδήγηση"
+                                },
+                                "type" :"h2"
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params": {
+                                "text": {
+                                    "en": "Header 3",
+                                    "el": "Για την υπηρεσία επικοινωνήστε:"
+                                },
+                                "type" :"h3"
+                            }
+                        },
+                        {
+                            "element": "htmlElement",
+                            "params": {
+                                "text": {
+                                    "en": "Paragraph",
+                                    "el": "<ul class=\"govcy-list-unstyled\"><li>Email: <a href=\"citizen_documents@moi.gov.cy\">citizen_documents@moi.gov.cy</a></li><li>Τηλέφωνο: <a href=\"tel:+35722308777\">22308777</a></li><li>Δευτέρα με Παρασκευή, 08:00 - 14:30</li></ul>"
+                                }
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params": {
+                                "text": {
+                                    "en": "Header 3",
+                                    "el": "Για το CY Login επικοινωνήστε:"
+                                },
+                                "type" :"h3"
+                            }
+                        },
+                        {
+                            "element": "htmlElement",
+                            "params": {
+                                "text": {
+                                    "en": "Paragraph",
+                                    "el": "<ul class=\"govcy-list-unstyled\"><li>Email: <a href=\"mailto:CyLoginSupport@dits.dmrid.gov.cy\">CyLoginSupport@dits.dmrid.gov.cy</a></li></ul>"
+                                }
+                            }
+                        }
+                            
+                      ]
+                  }
+              ]
+          }
+      },
+      {
+          "pageData": {
+              "url": "login",
+              "title" : {"en": "CY Login", "el": "CY Login"},
+              "layout" : "layouts/govcyBase.njk", 
+              "mainLayout" : "max-width"
+          },
+          "pageTemplate": {
+              "sections" :[
+                    {
+                        "name": "header",
+                        "elements": [
+                            {
+                                "element": "htmlElement",
+                                "params": {
+                                    "text": {
+                                        "en": "",
+                                        "el": ""
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "footer",
+                        "elements": [
+                            {
+                                "element": "htmlElement",
+                                "params": {
+                                    "text": {
+                                        "en": "",
+                                        "el": ""
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                  {
+                      "name": "main",
+                      "elements": [
+                          {
+                              "element": "htmlElement",
+                              "params" : {
+                                "text": {
+                                    "en": "CY Login",
+                                    "el":"<div class=\"govcy-row\"> <div class=\"govcy-col-3 \"> </div><div class=\"govcy-col-6 govcy-form\" id=\"loginDiv\" style=\"padding-top: 1.75rem;padding-bottom: 1.75rem;border: 1px solid rgba(0, 0, 0, 0.4);box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);\"><div class=\"\" id=\"alerts\"></div><div class=\"\"><h1 class=\"ariadniTitle\" style=\"color: #6c757d!important;font-size: 1.5rem;\"><img src=\"https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@latest/dist/img/favicon-48x48.png\">   CY Login</h1></div><h2 class=\" ariadniTitle\" style=\"color: #6c757d!important;font-size: 1.5rem;\">Sign In</h2><div id=\"id\" class=\"govcy-form-control\"><label for=\"id\" class=\"govcy-label\" style=\"font-size: 1rem; font-weight: 400; line-height: 1.5;color: #212529;\">Username</label><span id=\"id_error\" class=\"govcy-input-error-msg\"></span><input type=\"text\" class=\"govcy-text-input\" name=\"id\" maxlength=\"100\" style=\"height: 38px;border: 1px solid #ced4da;border-radius: 0.25rem;\"></div><div id=\"password\" class=\"govcy-form-control\"><label for=\"password\" class=\"govcy-label\" style=\"font-size: 1rem; font-weight: 400; line-height: 1.5;color: #212529;\">Password</label><span id=\"password_error\" class=\"govcy-input-error-msg\"></span><input type=\"password\" class=\"govcy-text-input\" name=\"password\" maxlength=\"100\" style=\"height: 38px;border: 1px solid #ced4da;border-radius: 0.25rem;\"></div><button type=\"button\" class=\"govcy-btn-primary\" id=\"nextRoutebtn\" onclick=\"location.href='../consent-pending-list'\">Sign In</button><div class=\"\"><div class=\"ariadniHRLine\" style=\"height: 0px;border: 1px solid #EEE;color: #6c757d;letter-spacing: .1em;line-height: 0;text-align: center;margin: 1rem 0;\"></div></div><div class=\" ariadniText\" style=\"font-size: 1rem;font-weight: 400;line-height: 1.5;color: #212529;\">No account? <span class=\"ariadniAnchor\" style=\"color: #1c809d;text-decoration: none;\">Sign up</span><br><span class=\"ariadniAnchor\" style=\"color: #1c809d;text-decoration: none;\">Forgot username?</span><br><span class=\"ariadniAnchor\" style=\"color: #1c809d;text-decoration: none;\">Forgot password?</span></div><div class=\"\"><div class=\"ariadniHRLine\" style=\"height: 0px;border: 1px solid #EEE;color: #6c757d;letter-spacing: .1em;line-height: 0;text-align: center;margin: 1rem 0;\"><span style=\"font-size: 1rem;font-weight: 400;background-color: #FFF;padding: 0 1em;\">OR</span></div></div><div class=\" ariadniText\" style=\"font-size: 1rem;font-weight: 400;line-height: 1.5;color: #212529;\"><span class=\"ariadniAnchor\" style=\"color: #1c809d;text-decoration: none;\">Sign in with eIDAS</span></div></div></div><div class=\"govcy-col-3 \"> </div></div>"
+                                }
+                              }
+                          }
+                      ]
+                  }
+              ]
+          }
+      },
+      {
+          "pageData": {
+              "url": "login/1",
+              "title" : {"en": "CY Login", "el": "CY Login"},
+              "layout" : "layouts/govcyBase.njk", 
+              "mainLayout" : "max-width"
+          },
+          "pageTemplate": {
+              "sections" :[
+                    {
+                        "name": "header",
+                        "elements": [
+                            {
+                                "element": "htmlElement",
+                                "params": {
+                                    "text": {
+                                        "en": "",
+                                        "el": ""
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "footer",
+                        "elements": [
+                            {
+                                "element": "htmlElement",
+                                "params": {
+                                    "text": {
+                                        "en": "",
+                                        "el": ""
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                  {
+                      "name": "main",
+                      "elements": [
+                          {
+                              "element": "htmlElement",
+                              "params" : {
+                                "text": {
+                                    "en": "CY Login",
+                                    "el":"<div class=\"govcy-row\"> <div class=\"govcy-col-3 \"> </div><div class=\"govcy-col-6 govcy-form\" id=\"loginDiv\" style=\"padding-top: 1.75rem;padding-bottom: 1.75rem;border: 1px solid rgba(0, 0, 0, 0.4);box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);\"><div class=\"\" id=\"alerts\"></div><div class=\"\"><h1 class=\"ariadniTitle\" style=\"color: #6c757d!important;font-size: 1.5rem;\"><img src=\"https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@latest/dist/img/favicon-48x48.png\">   CY Login</h1></div><h2 class=\" ariadniTitle\" style=\"color: #6c757d!important;font-size: 1.5rem;\">Sign In</h2><div id=\"id\" class=\"govcy-form-control\"><label for=\"id\" class=\"govcy-label\" style=\"font-size: 1rem; font-weight: 400; line-height: 1.5;color: #212529;\">Username</label><span id=\"id_error\" class=\"govcy-input-error-msg\"></span><input type=\"text\" class=\"govcy-text-input\" name=\"id\" maxlength=\"100\" style=\"height: 38px;border: 1px solid #ced4da;border-radius: 0.25rem;\"></div><div id=\"password\" class=\"govcy-form-control\"><label for=\"password\" class=\"govcy-label\" style=\"font-size: 1rem; font-weight: 400; line-height: 1.5;color: #212529;\">Password</label><span id=\"password_error\" class=\"govcy-input-error-msg\"></span><input type=\"password\" class=\"govcy-text-input\" name=\"password\" maxlength=\"100\" style=\"height: 38px;border: 1px solid #ced4da;border-radius: 0.25rem;\"></div><button type=\"button\" class=\"govcy-btn-primary\" id=\"nextRoutebtn\" onclick=\"location.href='../../consent-request/1/'\">Sign In</button><div class=\"\"><div class=\"ariadniHRLine\" style=\"height: 0px;border: 1px solid #EEE;color: #6c757d;letter-spacing: .1em;line-height: 0;text-align: center;margin: 1rem 0;\"></div></div><div class=\" ariadniText\" style=\"font-size: 1rem;font-weight: 400;line-height: 1.5;color: #212529;\">No account? <span class=\"ariadniAnchor\" style=\"color: #1c809d;text-decoration: none;\">Sign up</span><br><span class=\"ariadniAnchor\" style=\"color: #1c809d;text-decoration: none;\">Forgot username?</span><br><span class=\"ariadniAnchor\" style=\"color: #1c809d;text-decoration: none;\">Forgot password?</span></div><div class=\"\"><div class=\"ariadniHRLine\" style=\"height: 0px;border: 1px solid #EEE;color: #6c757d;letter-spacing: .1em;line-height: 0;text-align: center;margin: 1rem 0;\"><span style=\"font-size: 1rem;font-weight: 400;background-color: #FFF;padding: 0 1em;\">OR</span></div></div><div class=\" ariadniText\" style=\"font-size: 1rem;font-weight: 400;line-height: 1.5;color: #212529;\"><span class=\"ariadniAnchor\" style=\"color: #1c809d;text-decoration: none;\">Sign in with eIDAS</span></div></div></div><div class=\"govcy-col-3 \"> </div></div>"
+                                }
+                              }
+                          }
+                      ]
+                  }
+              ]
+          }
+      },
+      {
+        "pageData": {
+            "url": "consent-pending-list",
+            "title" : {"en": "Tiitle", "el": "Συγκατάθεση για ανήλικο"},
+            "layout" : "layouts/govcyBase.njk", 
+            "mainLayout" : "two-thirds"
+        },
+        "pageTemplate": {
+            "sections" :[
+                {
+                    "name": "main",
+                    "elements": [
+                        {
+                            "element": "textElement",
+                            "params" : {
+                              "text": {
+                                  "en": "Header 1",
+                                  "el":"Συγκατάθεση για ανήλικο"
+                              },
+                              "type" :"h1"
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params" : {
+                                "text": {
+                                    "en": "Paragraph",
+                                    "el":"Για παιδιά κάτω των 12 κάνει την αίτηση ο ένας γονέας και δίνει συγκατάθεση ο άλλος γονέας"
+                                }
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params" : {
+                              "text": {
+                                  "en": "Header 2",
+                                  "el":"Δώστε συγκατάθεση:"
+                              },
+                              "type" :"h2"
+                            }
+                        },
+                        {
+                            "element": "table",
+                            "params" : {
+                              "responsiveType":"vertical-headers",
+                                "head":[
+                                    {
+                                        "text":{"en":"Name","el":"Όνομα"}
+                                    },
+                                    {
+                                        "text":{"en":"Type","el":"Τύπος"}
+                                    },
+                                    {
+                                        "text":{"en":"Date","el":"Ημερομηνία Αιτήματος"}
+                                    },
+                                    {
+                                        "text":{"en":"","el":""}
+                                    }
+                                ],
+                                "rows": [
+                                    [
+                                        {
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"name","el":"Ανδρέου Ανδρέας"} } }
+                                            ]
+                                        },
+                                        {
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"type","el":"Ταυτότητα"} } }
+                                            ]
+                                        },
+                                        {
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"type","el":"2/10/2024"} } }
+                                            ]
+                                        },
+                                        {
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"actions","el":"<a href=\"../consent-request/1/\">Συγκατάθεση</a>"} } }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                        
+                    ]
+                }
+            ]
+        }
+    },
+    {
+      "pageData": {
+          "url": "consent-pending-list-empty",
+          "title" : {"en": "Tiitle", "el": "Δεν υπάρχουν αιτήσεις για συγκατάθεση"},
+          "layout" : "layouts/govcyBase.njk", 
+          "mainLayout" : "two-thirds"
+      },
+      "pageTemplate": {
+          "sections" :[
+              {
+                  "name": "main",
+                  "elements": [
+                      {
+                          "element": "textElement",
+                          "params" : {
+                            "text": {
+                                "en": "Header 1",
+                                "el":"Δεν υπάρχουν αιτήσεις για συγκατάθεση"
+                            },
+                            "type" :"h1"
+                          }
+                      },
+                      {
+                          "element": "textElement",
+                          "params" : {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el":"Δεν υπάρχουν αιτήσεις για συγκατάθεση."
+                              }
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  },
+    {
+        "pageData": {
+            "url": "consent-request/1",
+            "title" : {"en": "Tiitle", "el": "Χρειάζεται η συγκατάθεσή σας"},
+            "layout" : "layouts/govcyBase.njk", 
+            "mainLayout" : "two-thirds"
+        },
+        "pageTemplate": {
+            "sections" :[
+                {
+                    "name": "main",
+                    "elements": [
+                        {
+                            "element": "textElement",
+                            "params" : {
+                              "text": {
+                                  "en": "Header 1",
+                                  "el":"Χρειάζεται η συγκατάθεσή σας"
+                              },
+                              "type" :"h1"
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params" : {
+                                "text": {
+                                    "en": "Paragraph",
+                                    "el":"Έχουμε αίτημα από τον άλλο γονέα για έκδοση του πιο κάτω εγγράφου:"
+                                }
+                            }
+                        },
+                        {
+                            "element": "summaryList",
+                            "params" : {
+                                "items":[
+                                    {
+                                        "key":{"en":"Name","el":"Ονοματεπώνυμο"},
+                                        "value":
+                                        [
+                                            {"element":"htmlElement","params":{"text":{"en":"Name","el":"Ανδρέου Ανδρέας"} } }
+                                        ]
+                                    },
+                                    {
+                                        "key":{"en":"type","el":"Τύπος"},
+                                        "value":
+                                        [
+                                            {"element":"htmlElement","params":{"text":{"en":"Type","el":"Ταυτότητα"} } }
+                                        ]
+                                    },
+                                    {
+                                        "key":{"en":"Num","el":"Αριθμός εγγράφου"},
+                                        "value":
+                                        [
+                                            {"element":"htmlElement","params":{"text":{"en":"Num","el":"1234567"} } }
+                                        ]
+                                    },
+                                    {
+                                        "key":{"en":"Reason","el":"Λόγος αίτησης"},
+                                        "value":
+                                        [
+                                            {"element":"htmlElement","params":{"text":{"en":"Reason","el":"Φθορά"} } }
+                                        ]
+                                    },
+                                    {
+                                        "key":{"en":"Date","el":"Ημερομηνία αίτησης"},
+                                        "value":
+                                        [
+                                            {"element":"htmlElement","params":{"text":{"en":"Date","el":"2/10/2024"} } }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "element": "form",
+                            "params": {
+                                "elements":[
+                                    {
+                                        "element": "radios",
+                                        "params": {
+                                            "id":"consent"
+                                            ,"name":"consent"
+                                            ,"legend":{"en":"Consent","el":"Δίνετε τη συγκατάθεσή σας;"}
+                                            ,"items":[
+                                                {
+                                                    "value": "yes",
+                                                    "text": {"en":"Yes","el":"Ναι, να προχωρήσει η αίτηση"}
+                                                },
+                                                {
+                                                    "value": "no",
+                                                    "text": {"en":"No","el":"Όχι, δεν δίνω συγκατάθεση"}
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "element": "htmlElement",
+                                        "params": {
+                                            "text": {
+                                                "en": "Button",
+                                                "el": "<button type=\"button\" class=\"govcy-btn-success\" onclick=\"getSelectedConsent();\">Συνέχεια</button>"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "element": "htmlElement",
+                                        "params": {
+                                            "text": {
+                                                "en": "Consent",
+                                                "el": "<script>function getSelectedConsent(){const e=document.querySelector('input[name=\"consent\"]:checked');e?\"yes\"==e.value?location.href=\"../../consent-request-accept\":location.href=\"../../consent-request-reject\":location.href=\"../1-error/#errorSummaryTitle\"}</script>"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                        
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "pageData": {
+            "url": "consent-request/1-error",
+            "title" : {"en": "Tiitle", "el": "Χρειάζεται η συγκατάθεσή σας"},
+            "layout" : "layouts/govcyBase.njk", 
+            "mainLayout" : "two-thirds"
+        },
+        "pageTemplate": {
+            "sections" :[
+                {
+                    "name": "main",
+                    "elements": [
+                        {
+                            "element": "htmlElement",
+                            "params": {
+                                "text": {
+                                    "en": "ERROR",
+                                    "el":"<div class=\"govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3\"><h2 role=\"alert\" id=\"errorSummaryTitle\">Υπάρχει πρόβλημα</h2><p class=\"govcy-mb-0\"><a href=\"#consent-option-1\">Επιλέξτε ναι εάν δίνετε την συγκατάθεση σας</a></p></div>"
+                                }
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params" : {
+                              "text": {
+                                  "en": "Header 1",
+                                  "el":"Χρειάζεται η συγκατάθεσή σας"
+                              },
+                              "type" :"h1"
+                            }
+                        },
+                        {
+                            "element": "textElement",
+                            "params" : {
+                                "text": {
+                                    "en": "Paragraph",
+                                    "el":"Έχουμε αίτημα από τον άλλο γονέα για έκδοση του πιο κάτω εγγράφου:"
+                                }
+                            }
+                        },
+                        {
+                            "element": "summaryList",
+                            "params" : {
+                                "items":[
+                                    {
+                                        "key":{"en":"Name","el":"Ονοματεπώνυμο"},
+                                        "value":
+                                        [
+                                            {"element":"htmlElement","params":{"text":{"en":"Name","el":"Ανδρέου Ανδρέας"} } }
+                                        ]
+                                    },
+                                    {
+                                        "key":{"en":"type","el":"Τύπος"},
+                                        "value":
+                                        [
+                                            {"element":"htmlElement","params":{"text":{"en":"Type","el":"Ταυτότητα"} } }
+                                        ]
+                                    },
+                                    {
+                                        "key":{"en":"Num","el":"Αριθμός εγγράφου"},
+                                        "value":
+                                        [
+                                            {"element":"htmlElement","params":{"text":{"en":"Num","el":"1234567"} } }
+                                        ]
+                                    },
+                                    {
+                                        "key":{"en":"Reason","el":"Λόγος αίτησης"},
+                                        "value":
+                                        [
+                                            {"element":"htmlElement","params":{"text":{"en":"Reason","el":"Φθορά"} } }
+                                        ]
+                                    },
+                                    {
+                                        "key":{"en":"Date","el":"Ημερομηνία αίτησης"},
+                                        "value":
+                                        [
+                                            {"element":"htmlElement","params":{"text":{"en":"Date","el":"2/10/2024"} } }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "element": "form",
+                            "params": {
+                                "elements":[
+                                    {
+                                        "element": "radios",
+                                        "params": {
+                                            "id":"consent"
+                                            ,"name":"consent"
+                                            ,"legend":{"en":"Consent","el":"Δίνετε τη συγκατάθεσή σας;"}
+                                            ,"error": {"en":"Error message","el":"Επιλέξτε ναι εάν δίνετε την συγκατάθεση σας"}
+                                            ,"items":[
+                                                {
+                                                    "value": "yes",
+                                                    "text": {"en":"Yes","el":"Ναι, να προχωρήσει η αίτηση"}
+                                                },
+                                                {
+                                                    "value": "no",
+                                                    "text": {"en":"No","el":"Όχι, δεν δίνω συγκατάθεση"}
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "element": "htmlElement",
+                                        "params": {
+                                            "text": {
+                                                "en": "Button",
+                                                "el": "<button type=\"button\" class=\"govcy-btn-success\" onclick=\"getSelectedConsent();\">Συνέχεια</button>"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "element": "htmlElement",
+                                        "params": {
+                                            "text": {
+                                                "en": "Consent",
+                                                "el": "<script>function getSelectedConsent(){const e=document.querySelector('input[name=\"consent\"]:checked');e?\"yes\"==e.value?location.href=\"../../consent-request-accept\":location.href=\"../../consent-request-reject\":location.href=\"../1-error/#errorSummaryTitle\"}</script>"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                        
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "pageData": {
+            "url": "consent-request-accept",
+            "title" : {"en": "Home page", "el": "Έχετε δώσει συγκατάθεση"},
+            "layout" : "layouts/govcyBase.njk", 
+            "mainLayout" : "two-thirds"
+        },
+        "pageTemplate": {
+            "sections" :[
+                {
+                    "name": "main",
+                    "elements": [
+                      {
+                          "element": "textElement",
+                          "params": {
+                              "text": {
+                                  "en": "Header 1",
+                                  "el": "Έχετε δώσει συγκατάθεση"
+                              },
+                              "type" :"h1"
+                          }
+                      },
+                      {
+                          "element": "textElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "Η αίτηση για έκδοση ταυτότητας για το παιδί σας, Αντρέα Αντρέου μπορεί τώρα να συνεχίσει. "
+                              }
+                          }
+                      },
+                      {
+                          "element": "textElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "Έχουμε στείλει email στον άλλο γονέα."
+                              }
+                          }
+                      },
+                      {
+                          "element": "htmlElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "<a href=\"../consent-pending-list-empty\">Επιστροφή στις αιτήσεις</a>"
+                              }
+                          }
+                      }                          
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "pageData": {
+            "url": "consent-request-reject",
+            "title" : {"en": "Home page", "el": "Έχετε αρνηθεί συγκατάθεση"},
+            "layout" : "layouts/govcyBase.njk", 
+            "mainLayout" : "two-thirds"
+        },
+        "pageTemplate": {
+            "sections" :[
+                {
+                    "name": "main",
+                    "elements": [
+                      {
+                          "element": "textElement",
+                          "params": {
+                              "text": {
+                                  "en": "Header 1",
+                                  "el": "Έχετε αρνηθεί συγκατάθεση"
+                              },
+                              "type" :"h1"
+                          }
+                      },
+                      {
+                          "element": "textElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "Η έκδοση δεν θα προχωρήσει από τον άλλο γονέα. "
+                              }
+                          }
+                      },
+                      {
+                          "element": "htmlElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "<a href=\"../consent-pending-list-empty\">Επιστροφή στις αιτήσεις</a>"
+                              }
+                          }
+                      }                          
+                    ]
+                }
+            ]
+        }
+    }
+  ] 
+}

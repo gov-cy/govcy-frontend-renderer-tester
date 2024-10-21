@@ -1,0 +1,669 @@
+{
+  "site" : {
+      "id" : "stg",
+      "lang" : "en",
+      "title" : {"en":"Service title", "el":"Τιτλός υπηρεσίας"}, 
+      "headerTitle" : {"en":"Header title", "el":"Τιτλός επικεφαλιδας"},
+      "description" : {"en":"Service description", "el":"Περιγραφή υπηρεσίας"},
+      "url" : "https://gov.cy",
+      "isTesting" : true,
+      "cdn" : {
+          "dist" : "https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist",
+          "cssIntegrity" : "sha384-1zLHWOtnS0hOIz5mVEPZp0UH5gUE6eo0CQcCGA3sF2TyYhHyKOd3Ni8Iy/NjEASU",
+          "jsIntegrity" : "sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+"
+      }
+  },
+  "pages": [
+      {
+          "pageData": {
+              "url": "v1",
+              "title" : {"en": "Preview Space", "el": "Προεπισκόπηση χώρου"},
+              "layout" : "layouts/govcyBase.njk", 
+              "mainLayout" : "two-thirds"
+          },
+          "pageTemplate": {
+              "sections" :[
+                  {
+                      "name": "header",
+                      "elements": [
+                          {
+                              "element": "htmlElement",
+                              "params": {
+                                  "text": {
+                                      "en": "<div class=\"govcy-header-top-area\"><div class=\"govcy-container\"><div class=\"govcy-header-top-area-wrapper\"><ul class=\"govcy-sign-in\"><li>Firstname Lastname</li><li><span>|</span></li><li><a href=\"#\">Sign Out</a></li></ul></div></div></div><div class=\"govcy-header-main-area\"><div class=\"govcy-container govcy-main-area-items\"><div class=\"govcy-navigation-container\"><div class=\"govcy-service-container\"><a href=\"https://gov.cy/\" class=\"govcy-logo\" title=\"Go to the gov.cy homepage\"><img alt=\"gov.cy Logo\"></a><span class=\"govcy-service-name\">Service Name</span></div><ul class=\"govcy-menu-items\"><li class=\"govcy-desktop-menu-only\" hidden=\"\"><span><a href=\"#\" class=\"govcy-menu-item\" aria-label=\"Ελληνική γλώσσα\" lang=\"el\">EL</a></span></li><li class=\"govcy-desktop-menu-only\" hidden=\"\"><span class=\"govcy-menu-language-last-item\"><a href=\"#\" aria-current=\"true\" class=\"govcy-menu-item active\" aria-label=\"English language\" lang=\"en\">EN</a></span></li><li class=\"govcy-mobile-menu govcy-mobile-menu-only govcy-dropdown govcy-ms-auto\"><span><a href=\"#\" class=\"govcy-menu-item govcy-expand-btn\" aria-expanded=\"false\">Menu</a></span></li></ul></div></div></div><div class=\"govcy-header-menu-area\"><nav class=\"govcy-mainmenu\" aria-label=\"Main Menu\"><div class=\"govcy-container\"><ul class=\"govcy-menu-items govcy-header-language-area govcy-mobile-menu-only\" hidden=\"\"><li><a href=\"#\" class=\"govcy-menu-item\" aria-label=\"Ελληνική γλώσσα\" lang=\"el\">EN</a></li><li><a href=\"#\" aria-current=\"true\" class=\"govcy-menu-item active\" aria-label=\"English language\" lang=\"en\">EL</a></li></ul></div></nav></div>",
+                                      "el": "Header el"
+                                  }
+                              }
+                          }
+                      ]
+                  },
+                  {
+                      "name": "main",
+                      "elements": [
+                            {
+                                "element": "table",
+                                "params": {
+                                    "firstCellIsHeader":true,
+                                    "rows": [
+                                    [
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"Applicant","el":"Αιτητής"} } }
+                                            ]
+                                        },
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"[Bianca Baggio]","el":"[Bianca Baggio]"} } }
+                                            ]
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"Procedure","el":"Διαδικασία"} } }
+                                            ]
+                                        },
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"[Master’s study grant application]","el":"[Master’s study grant application EL]"} } }
+                                            ]
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-1 govcy-br-bottom-secondary govcy-pb-8",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"Evidence","el":"Αποδεικτικό στοιχείο"} } }
+                                            ]
+                                        },
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-1 govcy-br-bottom-secondary govcy-pb-8",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"[Proof of secondary education]","el":"[Proof of secondary education]"} } }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                                }
+                            },
+                           {
+                              "element": "form",
+                              "params" : {
+                                  "elements" :[
+                                      {
+                                        "element":"fieldset",
+                                        "isPageHeading":true,
+                                        "params": {
+                                            "id":"evidenceFieldset",
+                                            "ariaDescribedby" : "evidenceFieldsetHint",
+                                            "elements":[
+                                                {
+                                                    "element": "legend",
+                                                    "params": {
+                                                        "legend":{"en":"[Secondary education diploma]","el":"[Απολυτήριο δευτεροβάθμιας εκπαίδευσης]"}
+                                                    }
+                                                },
+                                                {
+                                                    "element":"formControl",
+                                                    "params": {
+                                                        "isError":false,
+                                                        "elements": [
+                                                            {
+                                                                "element": "hint",
+                                                                "params": {
+                                                                    "id":"evidenceFieldsetHint",
+                                                                    "hint": {"en":"Select the evidence you would like to send.","el":"Επιλέξτε τα αποδεικτικά στοιχεία που θέλετε να στείλετε."}
+                                                                }
+                                                            },
+                                                            {
+                                                                "element": "table",
+                                                                "params": {
+                                                                    "responsiveType" : "vertical-headers",
+                                                                    "head":[
+                                                                      {"text":{"en":"Language","el":"Γλώσσα"}},
+                                                                      {"text":{"en":"Eligibility","el":"Επιλεξιμότητα"}},
+                                                                      {"text":{"en":"Actions","el":"Ενέργειες"}}
+                                                                  ],
+                                                                    "rows": [
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-checkbox govcy-my-0\"><input class=\"govcy-checkbox-input\" name=\"evidenceSelect\" type=\"checkbox\" id=\"evidenceSelect-1\" value=\"[unknown]\"><label class=\"govcy-label\" for=\"evidenceSelect-1\">[Unknown]</label></div>","el":"[Άγνωστη]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"tag","params":{"text":{"en":"Eligible","el":"Επιλέξιμη"},"classes":"govcy-tag-green"} }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [Unknown] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [Unknown] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ],
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-checkbox govcy-my-0\"><input class=\"govcy-checkbox-input\" name=\"evidenceSelect\" type=\"checkbox\" id=\"evidenceSelect-2\" value=\"[English]\"><label class=\"govcy-label\" for=\"evidenceSelect-2\">[English]</label></div>","el":"[English EL]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"tag","params":{"text":{"en":"Eligible","el":"Επιλέξιμη"},"classes":"govcy-tag-green"} }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [English] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [English] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ],
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-valign-middle\">Italian</div>","el":"[Italian EL]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"tag","params":{"text":{"en":"Not eligible","el":"Μη Επιλέξιμη"},"classes":"govcy-tag-yellow"} }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [Italian] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [Italian] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ],
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-valign-middle\">French</div>","el":"[French EL]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"tag","params":{"text":{"en":"Not eligible","el":"Μη Επιλέξιμη"},"classes":"govcy-tag-yellow"} }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [French] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [French] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ]
+                                                                      
+                                                                  ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                      },
+                                      {
+                                        "element":"button",
+                                        "params":{"text":{"en":"Send","el":"Αποστολή"},"variant":"success","id":"sendBtn","classes":"govcy-mr-3"}
+                                      },
+                                      {
+                                        "element":"button",
+                                        "params":{"text":{"en":"Cancel","el":"Ακύρωση"},"variant":"secondary","id":"cancelBtn"}
+                                      }
+                                ]
+                              }
+                          },
+                          {
+                              "element":"htmlElement",
+                              "params": {
+                                  "text": {
+                                    "en":"<details class=\"govcy-details\"><summary class=\"govcy-details__summary\"><span class=\"govcy-details__summary-text\">Is the evidence is not available in the language needed?</span></summary><div class=\"govcy-details__text\"><p>You will need to have the document translated <b>by a sworn translator</b>.</p><ol class=\"govcy-mb-0\"><li><b>Download</b> the document from the list above</li><li>Obtain an <b>officially translated</b> document by a sword translator</li><li>Upload the <b>translated document</b> on the procedure application</li></ol></div></details>",
+                                    "el":"..."
+                                }
+                              }
+                          }
+                      ]
+                  }
+              ]
+          }
+      },
+      {
+          "pageData": {
+              "url": "v2",
+              "title" : {"en": "Preview Space", "el": "Προεπισκόπηση χώρου"},
+              "layout" : "layouts/govcyBase.njk", 
+              "mainLayout" : "two-thirds"
+          },
+          "pageTemplate": {
+              "sections" :[
+                  {
+                      "name": "header",
+                      "elements": [
+                          {
+                              "element": "htmlElement",
+                              "params": {
+                                  "text": {
+                                      "en": "<div class=\"govcy-header-top-area\"><div class=\"govcy-container\"><div class=\"govcy-header-top-area-wrapper\"><ul class=\"govcy-sign-in\"><li>Firstname Lastname</li><li><span>|</span></li><li><a href=\"#\">Sign Out</a></li></ul></div></div></div><div class=\"govcy-header-main-area\"><div class=\"govcy-container govcy-main-area-items\"><div class=\"govcy-navigation-container\"><div class=\"govcy-service-container\"><a href=\"https://gov.cy/\" class=\"govcy-logo\" title=\"Go to the gov.cy homepage\"><img alt=\"gov.cy Logo\"></a><span class=\"govcy-service-name\">Service Name</span></div><ul class=\"govcy-menu-items\"><li class=\"govcy-desktop-menu-only\" hidden=\"\"><span><a href=\"#\" class=\"govcy-menu-item\" aria-label=\"Ελληνική γλώσσα\" lang=\"el\">EL</a></span></li><li class=\"govcy-desktop-menu-only\" hidden=\"\"><span class=\"govcy-menu-language-last-item\"><a href=\"#\" aria-current=\"true\" class=\"govcy-menu-item active\" aria-label=\"English language\" lang=\"en\">EN</a></span></li><li class=\"govcy-mobile-menu govcy-mobile-menu-only govcy-dropdown govcy-ms-auto\"><span><a href=\"#\" class=\"govcy-menu-item govcy-expand-btn\" aria-expanded=\"false\">Menu</a></span></li></ul></div></div></div><div class=\"govcy-header-menu-area\"><nav class=\"govcy-mainmenu\" aria-label=\"Main Menu\"><div class=\"govcy-container\"><ul class=\"govcy-menu-items govcy-header-language-area govcy-mobile-menu-only\" hidden=\"\"><li><a href=\"#\" class=\"govcy-menu-item\" aria-label=\"Ελληνική γλώσσα\" lang=\"el\">EN</a></li><li><a href=\"#\" aria-current=\"true\" class=\"govcy-menu-item active\" aria-label=\"English language\" lang=\"en\">EL</a></li></ul></div></nav></div>",
+                                      "el": "Header el"
+                                  }
+                              }
+                          }
+                      ]
+                  },
+                  {
+                      "name": "main",
+                      "elements": [
+                            {
+                                "element": "table",
+                                "params": {
+                                    "firstCellIsHeader":true,
+                                    "rows": [
+                                    [
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"Applicant","el":"Αιτητής"} } }
+                                            ]
+                                        },
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"[Bianca Baggio]","el":"[Bianca Baggio]"} } }
+                                            ]
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"Procedure","el":"Διαδικασία"} } }
+                                            ]
+                                        },
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"[Master’s study grant application]","el":"[Master’s study grant application EL]"} } }
+                                            ]
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-1 govcy-br-bottom-secondary govcy-pb-8",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"Evidence","el":"Αποδεικτικό στοιχείο"} } }
+                                            ]
+                                        },
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-1 govcy-br-bottom-secondary govcy-pb-8",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"[Proof of secondary education]","el":"[Proof of secondary education]"} } }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                                }
+                            },
+                           {
+                              "element": "form",
+                              "params" : {
+                                  "elements" :[
+                                      {
+                                        "element":"fieldset",
+                                        "isPageHeading":true,
+                                        "params": {
+                                            "id":"evidenceFieldset",
+                                            "ariaDescribedby" : "evidenceFieldsetHint",
+                                            "elements":[
+                                                {
+                                                    "element": "legend",
+                                                    "params": {
+                                                        "legend":{"en":"[Secondary education diploma]","el":"[Απολυτήριο δευτεροβάθμιας εκπαίδευσης]"}
+                                                    }
+                                                },
+                                                {
+                                                    "element":"formControl",
+                                                    "params": {
+                                                        "isError":false,
+                                                        "elements": [
+                                                            {
+                                                                "element": "hint",
+                                                                "params": {
+                                                                    "id":"evidenceFieldsetHint",
+                                                                    "hint": {"en":"Select the evidence you would like to send.","el":"Επιλέξτε τα αποδεικτικά στοιχεία που θέλετε να στείλετε."}
+                                                                }
+                                                            },
+                                                            {
+                                                                "element": "table",
+                                                                "params": {
+                                                                    "responsiveType" : "vertical-headers",
+                                                                    "head":[
+                                                                      {"text":{"en":"Language","el":"Γλώσσα"}},
+                                                                      {"text":{"en":"Actions","el":"Ενέργειες"}}
+                                                                  ],
+                                                                    "rows": [
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-checkbox govcy-my-0\"><input class=\"govcy-checkbox-input\" name=\"evidenceSelect\" type=\"checkbox\" id=\"evidenceSelect-1\" value=\"[unknown]\"><label class=\"govcy-label\" for=\"evidenceSelect-1\">[Unknown]</label></div>","el":"[Άγνωστη]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [Unknown] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [Unknown] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ],
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-checkbox govcy-my-0\"><input class=\"govcy-checkbox-input\" name=\"evidenceSelect\" type=\"checkbox\" id=\"evidenceSelect-2\" value=\"[English]\"><label class=\"govcy-label\" for=\"evidenceSelect-2\">[English]</label></div>","el":"[English EL]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [English] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [English] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ],
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-valign-middle\">Italian (Not eligible language)</div>","el":"[Italian EL]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [Italian] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [Italian] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ],
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-valign-middle\">French (Not eligible language)</div>","el":"[French EL]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [French] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [French] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ]
+                                                                      
+                                                                  ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                      },
+                                      {
+                                        "element":"button",
+                                        "params":{"text":{"en":"Send","el":"Αποστολή"},"variant":"success","id":"sendBtn","classes":"govcy-mr-3", "prototypeNavigate":"../error/#errorSummaryTitle"}
+                                      },
+                                      {
+                                        "element":"button",
+                                        "params":{"text":{"en":"Cancel","el":"Ακύρωση"},"variant":"secondary","id":"cancelBtn"}
+                                      }
+                                ]
+                              }
+                          },
+                          {
+                              "element":"htmlElement",
+                              "params": {
+                                  "text": {
+                                    "en":"<details class=\"govcy-details\"><summary class=\"govcy-details__summary\"><span class=\"govcy-details__summary-text\">Is the evidence is not available in the language needed?</span></summary><div class=\"govcy-details__text\"><p>You will need to have the document translated <b>by a sworn translator</b>.</p><ol class=\"govcy-mb-0\"><li><b>Download</b> the document from the list above</li><li>Obtain an <b>officially translated</b> document by a sword translator</li><li>Upload the <b>translated document</b> on the procedure application</li></ol></div></details>",
+                                    "el":"..."
+                                }
+                              }
+                          }
+                      ]
+                  }
+              ]
+          }
+      },
+      {
+          "pageData": {
+              "url": "error",
+              "title" : {"en": "Preview Space", "el": "Προεπισκόπηση χώρου"},
+              "layout" : "layouts/govcyBase.njk", 
+              "mainLayout" : "two-thirds"
+          },
+          "pageTemplate": {
+              "sections" :[
+                  {
+                      "name": "header",
+                      "elements": [
+                          {
+                              "element": "htmlElement",
+                              "params": {
+                                  "text": {
+                                      "en": "<div class=\"govcy-header-top-area\"><div class=\"govcy-container\"><div class=\"govcy-header-top-area-wrapper\"><ul class=\"govcy-sign-in\"><li>Firstname Lastname</li><li><span>|</span></li><li><a href=\"#\">Sign Out</a></li></ul></div></div></div><div class=\"govcy-header-main-area\"><div class=\"govcy-container govcy-main-area-items\"><div class=\"govcy-navigation-container\"><div class=\"govcy-service-container\"><a href=\"https://gov.cy/\" class=\"govcy-logo\" title=\"Go to the gov.cy homepage\"><img alt=\"gov.cy Logo\"></a><span class=\"govcy-service-name\">Service Name</span></div><ul class=\"govcy-menu-items\"><li class=\"govcy-desktop-menu-only\" hidden=\"\"><span><a href=\"#\" class=\"govcy-menu-item\" aria-label=\"Ελληνική γλώσσα\" lang=\"el\">EL</a></span></li><li class=\"govcy-desktop-menu-only\" hidden=\"\"><span class=\"govcy-menu-language-last-item\"><a href=\"#\" aria-current=\"true\" class=\"govcy-menu-item active\" aria-label=\"English language\" lang=\"en\">EN</a></span></li><li class=\"govcy-mobile-menu govcy-mobile-menu-only govcy-dropdown govcy-ms-auto\"><span><a href=\"#\" class=\"govcy-menu-item govcy-expand-btn\" aria-expanded=\"false\">Menu</a></span></li></ul></div></div></div><div class=\"govcy-header-menu-area\"><nav class=\"govcy-mainmenu\" aria-label=\"Main Menu\"><div class=\"govcy-container\"><ul class=\"govcy-menu-items govcy-header-language-area govcy-mobile-menu-only\" hidden=\"\"><li><a href=\"#\" class=\"govcy-menu-item\" aria-label=\"Ελληνική γλώσσα\" lang=\"el\">EN</a></li><li><a href=\"#\" aria-current=\"true\" class=\"govcy-menu-item active\" aria-label=\"English language\" lang=\"en\">EL</a></li></ul></div></nav></div>",
+                                      "el": "Header el"
+                                  }
+                              }
+                          }
+                      ]
+                  },
+                  {
+                      "name": "main",
+                      "elements": [
+                            {
+                                "element":"htmlElement",
+                                "params":{"text":{"en":"<div class=\"govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3\"><h2 role=\"alert\" id=\"errorSummaryTitle\">There is a problem</h2><p class=\"govcy-mb-0\"><a href=\"#evidenceSelect-1\">Select a language for the evidence you would like to send</a></p></div>","el":"..."} }
+                            },
+                            {
+                                "element": "table",
+                                "params": {
+                                    "firstCellIsHeader":true,
+                                    "rows": [
+                                    [
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"Applicant","el":"Αιτητής"} } }
+                                            ]
+                                        },
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"[Bianca Baggio]","el":"[Bianca Baggio]"} } }
+                                            ]
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"Procedure","el":"Διαδικασία"} } }
+                                            ]
+                                        },
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-0",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"[Master’s study grant application]","el":"[Master’s study grant application EL]"} } }
+                                            ]
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-1 govcy-br-bottom-secondary govcy-pb-8",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"Evidence","el":"Αποδεικτικό στοιχείο"} } }
+                                            ]
+                                        },
+                                        {
+                                            "classes" : "govcy-bg-light govcy-br-bottom-1 govcy-br-bottom-secondary govcy-pb-8",
+                                            "elements": [
+                                                {"element":"htmlElement","params":{"text":{"en":"[Proof of secondary education]","el":"[Proof of secondary education]"} } }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                                }
+                            },
+                           {
+                              "element": "form",
+                              "params" : {
+                                  "elements" :[
+                                      {
+                                        "element":"fieldset",
+                                        "isPageHeading":true,
+                                        "params": {
+                                            "id":"evidenceFieldset",
+                                            "ariaDescribedby" : "evidenceFieldsetHint evidenceFieldsetError",
+                                            "elements":[
+                                                {
+                                                    "element": "legend",
+                                                    "params": {
+                                                        "legend":{"en":"[Secondary education diploma]","el":"[Απολυτήριο δευτεροβάθμιας εκπαίδευσης]"}
+                                                    }
+                                                },
+                                                {
+                                                    "element":"formControl",
+                                                    "params": {
+                                                        "isError":true,
+                                                        "elements": [
+                                                            {
+                                                                "element": "hint",
+                                                                "params": {
+                                                                    "id":"evidenceFieldsetHint",
+                                                                    "hint": {"en":"Select the evidence you would like to send.","el":"Επιλέξτε τα αποδεικτικά στοιχεία που θέλετε να στείλετε."}
+                                                                }
+                                                            },
+                                                            {
+                                                                "element": "errorMessage",
+                                                                "params": {
+                                                                    "id":"evidenceFieldsetError",
+                                                                    "message": {"en":"Select a language for the evidence you would like to send","el":"Επιλέξτε τα ..."}
+                                                                }
+                                                            },
+                                                            {
+                                                                "element": "table",
+                                                                "params": {
+                                                                    "responsiveType" : "vertical-headers",
+                                                                    "head":[
+                                                                      {"text":{"en":"Language","el":"Γλώσσα"}},
+                                                                      {"text":{"en":"Actions","el":"Ενέργειες"}}
+                                                                  ],
+                                                                    "rows": [
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-checkbox govcy-my-0\"><input class=\"govcy-checkbox-input\" name=\"evidenceSelect\" type=\"checkbox\" id=\"evidenceSelect-1\" value=\"[unknown]\"><label class=\"govcy-label\" for=\"evidenceSelect-1\">[Unknown]</label></div>","el":"[Άγνωστη]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [Unknown] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [Unknown] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ],
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-checkbox govcy-my-0\"><input class=\"govcy-checkbox-input\" name=\"evidenceSelect\" type=\"checkbox\" id=\"evidenceSelect-2\" value=\"[English]\"><label class=\"govcy-label\" for=\"evidenceSelect-2\">[English]</label></div>","el":"[English EL]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [English] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [English] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ],
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-valign-middle\">Italian (Not eligible language)</div>","el":"[Italian EL]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [Italian] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [Italian] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ],
+                                                                      [
+                                                                          {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<div class=\"govcy-valign-middle\">French (Not eligible language)</div>","el":"[French EL]"} } }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                              "classes":"govcy-valign-middle",
+                                                                              "elements": [
+                                                                                  {"element":"htmlElement","params":{"text":{"en":"<a class=\"govcy-mr-3\" href=\"#\">Download<span class=\"govcy-visually-hidden\"> evidence in [French] language</span></a><a href=\"#\">Preview<span class=\"govcy-visually-hidden\"> evidence in [French] language</span></a>","el":"..."} } }
+                                                                              ]
+                                                                          }
+                                                                      ]
+                                                                      
+                                                                  ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                      },
+                                      {
+                                        "element":"button",
+                                        "params":{"text":{"en":"Send","el":"Αποστολή"},"variant":"success","id":"sendBtn","classes":"govcy-mr-3"}
+                                      },
+                                      {
+                                        "element":"button",
+                                        "params":{"text":{"en":"Cancel","el":"Ακύρωση"},"variant":"secondary","id":"cancelBtn"}
+                                      }
+                                ]
+                              }
+                          },
+                          {
+                              "element":"htmlElement",
+                              "params": {
+                                  "text": {
+                                    "en":"<details class=\"govcy-details\"><summary class=\"govcy-details__summary\"><span class=\"govcy-details__summary-text\">Is the evidence is not available in the language needed?</span></summary><div class=\"govcy-details__text\"><p>You will need to have the document translated <b>by a sworn translator</b>.</p><ol class=\"govcy-mb-0\"><li><b>Download</b> the document from the list above</li><li>Obtain an <b>officially translated</b> document by a sword translator</li><li>Upload the <b>translated document</b> on the procedure application</li></ol></div></details>",
+                                    "el":"..."
+                                }
+                              }
+                          }
+                      ]
+                  }
+              ]
+          }
+      }
+  ] 
+}

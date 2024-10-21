@@ -1,0 +1,74 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"govcy-site": {
+		"scope": "json",
+		"prefix": "govcy-site",
+		"body": [
+			"{",
+			"\t\"site\" : {",
+			"\t\t\"id\" : \"${1:siteId}\",",
+			"\t\t\"lang\" : \"${2:en}\",",
+			"\t\t\"title\" : {\"en\":\"${3:Service title}\", \"el\":\"${4:Τιτλός υπηρεσίας}\"},",
+			"\t\t\"headerTitle\" : {\"en\":\"${5:Header title}\", \"el\":\"${6:Τιτλός επικεφαλιδας}\"},",
+			"\t\t\"description\" : {\"en\":\"${7:Service description}\", \"el\":\"${8:Περιγραφή υπηρεσίας}\"},",
+			"\t\t\"url\" : \"${9:https://gov.cy}\",",
+			"\t\t\"cdn\" : {",
+			"\t\t\t\"dist\" : \"${10:https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist}\",",
+			"\t\t\t\"cssIntegrity\" : \"${11:sha384-1zLHWOtnS0hOIz5mVEPZp0UH5gUE6eo0CQcCGA3sF2TyYhHyKOd3Ni8Iy/NjEASU}\",",
+			"\t\t\t\"jsIntegrity\" : \"${12:sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+}\"",
+			"\t\t}",
+			"\t},",
+			"\t\"pages\": [",
+			"\t\t$13",
+			"\t]",
+			"}"
+		],
+		"description": "JSON for a site"
+	},
+	"govcy-page": {
+		"scope": "json",
+		"prefix": "govcy-page",
+		"body": [
+			"{",
+			"\t\"pageData\": {",
+			"\t\t\"url\": \"${1:page1}\",",
+			"\t\t\"title\" : {\"en\":\"${2:Page title}\", \"el\":\"${3:Τιτλός σελίδας}\"},",
+			"\t\t\"layout\" : \"${4:layouts/govcyBase.njk}\", ",
+			"\t\t\"mainLayout\" : \"${5:two-thirds}\"",
+			"\t},",
+			"\t\"pageTemplate\": {",
+			"\t\t\"sections\" :[",
+			"\t\t\t{",
+			"\t\t\t\t\"name\": \"beforeMain\",",
+			"\t\t\t\t\"elements\": [",
+			"\t\t\t\t\t",
+			"\t\t\t\t]",
+			"\t\t\t},",
+			"\t\t\t{",
+			"\t\t\t\t\"name\": \"main\",",
+			"\t\t\t\t\"elements\": [",
+			"\t\t\t\t\t$6",
+			"\t\t\t\t]",
+			"\t\t\t}",
+			"\t\t]",
+			"\t}",
+			"}"
+		],
+		"description": "JSON for a page"
+	}
+}

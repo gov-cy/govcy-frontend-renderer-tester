@@ -1,0 +1,7 @@
+{
+    "pageData": {
+        "title": {"en": "Page title", "el": "Τιτλός σελιδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "max-width"
+    }
+}

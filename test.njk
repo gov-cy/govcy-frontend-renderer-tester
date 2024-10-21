@@ -1,0 +1,166 @@
+{% if layout %} {% extends layout %} {% endif %}
+{% from "govcyElement.njk" import govcyElement %}
+{% from "utilities/govcyUtilities.njk" import govcyLocalizeContent %}
+{% block main %}
+    <h2>Hint</h2>
+    {{ govcyElement("hint",{
+        hint:{en:"This is the hint element by itself ",el:"Περιεχομένο"}, 
+        lang:"en", classes:"govcy-test-class", id:"govcy-test-2"}) }}
+    <hr><h2>Label</h2>
+    {{ govcyElement("label",{
+        label: {en:"This is the label by <b>itself</b>. Options classes, for, id, isPrimary:false",el:"Περιεχομένο"}, 
+        lang:"en",classes:"govcy-test-class", for:"govcy-label-for-id", id:"govcy-test-3", isPrimary: false}) }}
+    {{ govcyElement("label",{
+        label:{en:"This is the label by <b>itself</b>. Options for, isPrimary, isPageHeading, isHTML, id ",el:"Περιεχομένο"} , 
+        lang:"en",for:"govcy-label-for-id",id:"govcy-test-4", isPrimary : true, isPageHeading : true, isHTML : true}) }}
+    <hr><h2>Legend</h2>
+    {{ govcyElement("legend",{
+        legend:{en:"This is the legend by itself. Options isPageHeading, classes, id",el:"Περιεχομένο"} , 
+        lang:"en",id:"govcy-test-5", isPageHeading : true, classes:"govcy-test-class"}) }}
+    {{ govcyElement("legend",{
+        legend:{en:"This is the legend by itself. Options isPageHeading:false, id",el:"Περιεχομένο"}, 
+        lang:"en",id:"govcy-test-6", isPageHeading : false}) }}
+    <hr><h2>Button</h2>
+    {{ govcyElement("button",{
+        text:{en:"Primary default options",el:"Περιεχομένο"}, 
+        lang:"en",id:"govcy-test-7"}) }} <br>
+    {{ govcyElement("button",{
+        text:{en:"Options variant:secondary, type:submit, classes:govcy-test-class ",el:"Περιεχομένο"}, 
+        lang:"en",variant:"secondary", type:"submit", classes:"govcy-test-class", id:"govcy-test-8"}) }}<br>
+    {{ govcyElement("button",{
+        text:{en:"Options variant:success",el:"Περιεχομένο"}, 
+        lang:"en",variant:"success", id:"govcy-test-9"}) }}<br>
+    <hr><h2>Form control and Error Message</h2>
+    {% call govcyElement("form",{ classes:"govcy-test-class", id:"govcy-test-13"}) %}
+        {% call govcyElement("formControl",{ isError:true,classes:"govcy-test-class", id:"govcy-test-12"}) %}
+            {{ govcyElement("errorMessage",{
+                message:{en:"Content",el:"Error message. Options id, classes. default lang"}, 
+                classes:"govcy-test-class", id:"govcy-test-10"}) }}
+            {{ govcyElement("errorMessage",{
+                message:{en:"Error message. Options id, lang: en",el:"Περιεχομένο"}, 
+                lang:"en", id:"govcy-test-11"}) }}
+        {% endcall %}
+    {% endcall %}
+    {% call govcyElement("form",{ action:"test-action", id:"govcy-test-14"}) %}
+        {% call govcyElement("formControl",{ id:"govcy-test-15"}) %}
+            Form with action
+        {% endcall %}
+    {% endcall %}
+    <hr><h2>Localized content</h2>
+    {{ govcyLocalizeContent({"en":"<b>Should show English escaped</b>", "el":"Fault"}, "en") }}
+    {{ govcyLocalizeContent({"en":"Fault", "el":"<b>Should show Ελληνικά escaped</b>"}, "el") }}
+    {{ govcyLocalizeContent({"en":"Fault", "el":"<b>Should show Ελληνικά unescaped</b>"}, "el", true) }}
+    {% call govcyElement("form",{}) %}
+    <hr><h2>Select</h2>
+    {{ govcyElement("select", {
+        label:{en:"Sort by",el:"Περιεχομένο"},
+        lang:"en",id:"govcy-test-17",name:"govcy-test-17",
+        items: [
+            {
+                value: "",
+                text: {en:"None",el:"Περιεχομένο"}
+            },
+            {
+                value: "published",
+                text: {en:"Recently published",el:"Περιεχομένο"}
+            }
+        ]
+        }) }}
+    {{ govcyElement("select", {
+        label:{en:"Sort by",el:"Περιεχομένο"},
+        error: {en:"Error message",el:"Περιεχομένο"},
+        hint: {en:"Hint message",el:"Περιεχομένο"},
+        lang:"en",id:"govcy-test-18",name:"govcy-test-18", 
+        items: [
+            {
+                value: "",
+                text: {en:"None",el:"Περιεχομένο"}
+            },
+            {
+                value: "published",
+                text: {en:"Recently published",el:"Περιεχομένο"}
+            }
+        ]
+        }) }}
+    {{ govcyElement("select", {
+        label:{en:"Sort by",el:"Περιεχομένο"},
+        error: {en:"Error message",el:"Περιεχομένο"},
+        hint: {en:"Hint message",el:"Περιεχομένο"},
+        lang:"en",id:"govcy-test-19",name:"govcy-test-19", isPageHeading: true, 
+        items: [
+            {
+                value: "",
+                text: {en:"None",el:"Περιεχομένο"}
+            },
+            {
+                value: "published",
+                text: {en:"Recently published",el:"Περιεχομένο"}
+            }
+        ]
+        }) }}
+    {{ govcyElement("select", {
+        label:{en:"Sort by",el:"Περιεχομένο"},
+        hint: {en:"Hint message",el:"Περιεχομένο"},
+        lang:"en",id:"govcy-test-20",name:"govcy-test-20", 
+        items: [
+            {
+                value: "",
+                text: {en:"None",el:"Περιεχομένο"}
+            },
+            {
+                value: "published",
+                text: {en:"Recently published",el:"Περιεχομένο"}
+            }
+        ]
+        }) }}
+    {{ govcyElement("select", {
+        label:{en:"Sort by",el:"Περιεχομένο label"},
+        error: {en:"Error message",el:"Περιεχομένο error"},
+        hint: {en:"Hint message",el:"Περιεχομένο hint"},
+        lang:"el",id:"govcy-test-21",name:"govcy-test-21", 
+        items: [
+            {
+                value: "",
+                text: {en:"None",el:"Κανένα"}
+            },
+            {
+                value: "published",
+                text: {en:"Recently published",el:"Πρόσφατα"}
+            }
+        ]
+        }) }}
+    {% endcall %}
+    <hr><h2>Form and form control with elements array</h2>
+    {% call govcyElement("form",
+        {id:"govcy-test-22", 
+            elements:[
+                {element: "formControl",
+                params: {id:"govcy-test-23", 
+                    elements:[
+                        {element: "select", params:{label:{en:"Sort by",el:"Περιεχομένο"},lang:"en",id:"govcy-test-23a",name:"govcy-test-23a", 
+                            items: [
+                                {
+                                    value: "",
+                                    text: {en:"None",el:"Περιεχομένο"}
+                                },
+                                {
+                                    value: "published",
+                                    text: {en:"Recently published",el:"Περιεχομένο"}
+                                }
+                            ]
+                        } },
+                        {element:"button",params:{text:{en:"Button 1",el:"Κουμπί 1"},lang:"en",id:"govcy-test-23b"} },
+                        {element:"button",params:{text:{en:"Button 2",el:"Κουμπί 2"},variant:"secondary",lang:"en",id:"govcy-test-23c"} },
+                        {element:"button",params:{text:{en:"Button 3",el:"Κουμπί 3"},variant:"success",lang:"en",id:"govcy-test-23d"} }
+                    ]
+                } }
+            ]
+        }) %}
+    {% endcall %}
+    <hr><h2>Text element</h2>
+    {{ govcyElement("textElement",{text:{en:"Default content ",el:"Default Περιεχομένο"}, lang:"en", classes:"govcy-test-class", id:"govcy-test-24a"}) }}
+    {{ govcyElement("textElement",{text:{en:"Default content ",el:"Default Περιεχομένο"}, type:"h3", lang:"el", id:"govcy-test-24b"}) }}
+{% endblock %}
+{% block beforeMain %}
+    {{ govcyElement("textElement",{text:{en:"Back ",el:"Πίσω"}, type:"p", lang:"en", id:"govcy-test-25"}) }}
+{% endblock %}

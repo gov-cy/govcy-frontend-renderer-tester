@@ -1,0 +1,9 @@
+---
+pagination:
+  data: collections.pages
+  size: 1
+  alias: page
+  addAllPagesToCollections: true
+permalink: "{{ page.url }}/index.html"
+---
+{{ page.content | safe }}
