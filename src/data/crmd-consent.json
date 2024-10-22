@@ -324,47 +324,9 @@
                             }
                         },
                         {
-                            "element": "table",
+                            "element": "htmlElement",
                             "params" : {
-                              "responsiveType":"vertical-headers",
-                                "head":[
-                                    {
-                                        "text":{"en":"Name","el":"Όνομα"}
-                                    },
-                                    {
-                                        "text":{"en":"Type","el":"Τύπος"}
-                                    },
-                                    {
-                                        "text":{"en":"Date","el":"Ημερομηνία Αιτήματος"}
-                                    },
-                                    {
-                                        "text":{"en":"","el":""}
-                                    }
-                                ],
-                                "rows": [
-                                    [
-                                        {
-                                            "elements": [
-                                                {"element":"htmlElement","params":{"text":{"en":"name","el":"Ανδρέου Ανδρέας"} } }
-                                            ]
-                                        },
-                                        {
-                                            "elements": [
-                                                {"element":"htmlElement","params":{"text":{"en":"type","el":"Ταυτότητα"} } }
-                                            ]
-                                        },
-                                        {
-                                            "elements": [
-                                                {"element":"htmlElement","params":{"text":{"en":"type","el":"2/10/2024"} } }
-                                            ]
-                                        },
-                                        {
-                                            "elements": [
-                                                {"element":"htmlElement","params":{"text":{"en":"actions","el":"<a href=\"../consent-request/1/\">Συγκατάθεση</a>"} } }
-                                            ]
-                                        }
-                                    ]
-                                ]
+                              "text":{"en":"English","el":"<table class=\"govcy-table govcy-table-responsive-vertical\"><tbody><tr class=\"govcy-summary-list-row-internal\"><td><dl class=\"govcy-summary-list-row-internal\"><dt><span class=\"govcy-visually-hidden\">Εγγραφή 1</span></dt><dt class=\"govcy-summary-list-key-internal\">Όνομα</dt><dd class=\"govcy-summary-list-value-internal\">Ανδρέου Ανδρέας</dd><dt class=\"govcy-summary-list-key-internal\">Τύπος</dt><dd class=\"govcy-summary-list-value-internal\">Ταυτότητα</dd><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία Αιτήματος</dt><dd class=\"govcy-summary-list-value-internal\">2/10/2024</dd></dl></td><td class=\"govcy-text-sm-start govcy-text-md-end\"><ul class=\"list-inline govcy-my-0\"><li class=\"list-inline-item\"><a href=\"../consent-request/1/\">Συγκατάθεση<span class=\"govcy-visually-hidden\">Ανδρέου Ανδρέας</span></a></li></ul></td></tr></tbody></table>"}
                             }
                         }
                         
