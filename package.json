@@ -5,11 +5,14 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
+        "clear-build": "node clear-build.mjs",
+        "build-github-pages": "node clear-build.mjs && npx @11ty/eleventy --pathprefix=/govcy-frontend-renderer-tester",
+        "build": "npx @11ty/eleventy",
         "start": "npx @11ty/eleventy --serve"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "@11ty/eleventy": "^2.0.1"
     }

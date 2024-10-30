@@ -30,10 +30,11 @@ module.exports = function (eleventyConfig) {
                 // set url and content for all pages in this file (or site)
                 const sitePages = siteData.pages.map(page => ({
                     url: siteData.site.id + '/' + page.pageData.url,
+                    routes: siteData.routes,
                     content: renderer.renderFromJSON(
                         page.pageTemplate, 
                         { "site": siteData.site, "pageData": page.pageData }
-                    ).replace('</body>', `${scriptTag}\n</body>`)
+                    ).replace('</body>', `<script>\n const DSFpathPrefix = '${pathPrefix}';\nconst DSFroutes=${JSON.stringify(siteData.routes)};</script>\n${scriptTag}\n</body>`)
                 }));
                 // add file (or site) pages to collection array
                 pages = pages.concat(sitePages);

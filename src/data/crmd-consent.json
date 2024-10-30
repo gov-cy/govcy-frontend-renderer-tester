@@ -447,6 +447,7 @@
                         {
                             "element": "form",
                             "params": {
+                                "id":"DSFPrototypeForm",
                                 "elements":[
                                     {
                                         "element": "radios",
@@ -578,6 +579,7 @@
                         {
                             "element": "form",
                             "params": {
+                                "id":"DSFPrototypeForm",
                                 "elements":[
                                     {
                                         "element": "radios",
@@ -723,6 +725,216 @@
                 }
             ]
         }
+    },
+    {
+        "pageData": {
+            "url": "consent-ask",
+            "title" : {"en": "Home page", "el": "Έχουμε ζητήσει συγκατάθεση"},
+            "layout" : "layouts/govcyBase.njk", 
+            "mainLayout" : "two-thirds"
+        },
+        "pageTemplate": {
+            "sections" :[
+                {
+                    "name" : "header",
+                    "elements":[
+                        {
+                            "element" : "htmlElement",
+                            "params" : {
+                                "text" : {
+                                    "en" : "Header",
+                                    "el" : "<div class=\"govcy-header-main-area\"><div class=\"govcy-container govcy-main-area-items\"><div class=\"govcy-navigation-container\"><div class=\"govcy-service-container\"><a href=\"https://www.gov.cy/\" class=\"govcy-logo\" title=\"Μεταβείτε στην αρχική σελίδα του gov.cy\"><img alt=\"Λογότυπο gov.cy\"></a><span class=\"govcy-service-name\">Αίτηση για ταυτότητα</span></div><ul class=\"govcy-menu-items govcy-ms-auto\"><li class=\"govcy-desktop-menu-only\"><span><a href=\"#\" aria-current=\"true\" class=\"govcy-menu-item active\" aria-label=\"Ελληνικά\">EL</a></span></li><li class=\"govcy-desktop-menu-only\"><span class=\"govcy-menu-language-last-item\"><a href=\"#\" class=\"govcy-menu-item\" aria-label=\"English\" lang=\"en\">EN</a></span></li><li class=\"govcy-mobile-menu govcy-mobile-menu-only govcy-dropdown govcy-ms-auto\" hidden=\"\"><span><a href=\"#\" class=\"govcy-menu-item govcy-expand-btn\">Μενού</a></span></li></ul></div></div></div><div class=\"govcy-header-menu-area\"><nav class=\"govcy-mainmenu\" aria-label=\"Main Menu\"><div class=\"govcy-container\"><ul class=\"govcy-menu-items govcy-header-language-area govcy-mobile-menu-only\" hidden=\"\"><li><a href=\"#\" class=\"govcy-menu-item active\" aria-current=\"true\">EL</a></li><li><a href=\"#\" class=\"govcy-menu-item\" lang=\"en\">EN</a></li></ul></div><div class=\"govcy-container\"><ul class=\"govcy-menu-items\" aria-label=\"Main Menu\"><li><a href=\"#\" class=\"govcy-menu-item\">Αρχική</a></li><li><a href=\"#\" class=\"govcy-menu-item\">Τα έγγραφά μου</a></li><li><a href=\"#\" class=\"govcy-menu-item\">Οι συναλλαγές μου</a></li><li><a href=\"#\" class=\"govcy-menu-item\">Επιβεβαίωση εγκυρότητας εγγράφων</a></li></ul></div></nav></div>"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "main",
+                    "elements": [
+                      {
+                          "element": "htmlElement",
+                          "params": {
+                              "text": {
+                                  "en": "Styles",
+                                  "el": "<style>.govcy-eu-funded-footer-el img{content:url(https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@v3.0.0/dist/img/EN_Funded%20by%20the%20EU%20NextGenEU_POS_H53_EL.png)!important}.govcy-cy-tomorrow-footer-el img{content:url(https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@v3.0.0/dist/img/CYpros%20to%20aurio%20logo%20eng_H53_EL.png)!important}.govcy-footer img{height:auto!important;width:auto!important}.share-icon{width:30px;margin-right:5px;margin-bottom:5px;aspect-ratio:auto!important;color:#75767b}a:focus .share-icon{color:#272525!important}.govcy-link-no-visited-state:visited:focus{color:#272525!important}.message-text{padding:10px;white-space:pre-wrap}.toast{visibility:hidden;opacity:0;min-width:250px;background-color:#fff;border:1px solid #bbbcbf;box-shadow:rgba(0,0,0,.15) 0 8px 16px 0;box-sizing:border-box;text-align:center;border-radius:5px;padding:10px;position:fixed;left:50%;bottom:10px;transform:translateX(-50%);transition:opacity .15s linear,visibility 0s .15s;font-size:16px}.toast.show{visibility:visible;opacity:1;transition:opacity .15s linear,visibility 0s}</style>"
+                              }
+                          }
+                      },
+                      {
+                          "element": "textElement",
+                          "params": {
+                              "text": {
+                                  "en": "Header 1",
+                                  "el": "Έχουμε ζητήσει συγκατάθεση"
+                              },
+                              "type" :"h1"
+                          }
+                      },
+                      {
+                          "element": "textElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "Έχουμε στείλει με email αίτημα για συγκατάθεση για έκδοση διαβατηρίου για:"
+                              }
+                          }
+                      },
+                      {
+                          "element": "summaryList",
+                          "params" : {
+                              "items":[
+                                  {
+                                      "key":{"en":"ID","el":"Αριθμός ταυτότητας"},
+                                      "value":
+                                      [
+                                          {"element":"htmlElement","params":{"text":{"en":"112233","el":"112233"} } }
+                                      ]
+                                  },
+                                  {
+                                      "key":{"en":"name","el":"Ονοματεπώνυμο παιδιού"},
+                                      "value":
+                                      [
+                                          {"element":"htmlElement","params":{"text":{"en":"Name","el":"Αντρέας Αντρέου"} } }
+                                      ]
+                                  },
+                                  {
+                                      "key":{"en":"parent name","el":"Ονοματεπώνυμο άλλου γονέα"},
+                                      "value":
+                                      [
+                                          {"element":"htmlElement","params":{"text":{"en":"Parent name","el":"Γιώργος Αντρέου"} } }
+                                      ]
+                                  },
+                                  {
+                                      "key":{"en":"Date","el":"Ημερομηνία αποστολής"},
+                                      "value":
+                                      [
+                                          {"element":"htmlElement","params":{"text":{"en":"Date","el":"3/11/2024"} } }
+                                      ]
+                                  },
+                                  {
+                                      "key":{"en":"Email","el":"Διεύθυνση email"},
+                                      "value":
+                                      [
+                                          {"element":"htmlElement","params":{"text":{"en":"email","el":"test@example.com"} } }
+                                      ]
+                                  }
+                              ]
+                          }
+                      },
+                      {
+                          "element": "textElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "Επόμενα βήματα"
+                              },
+                              "type" :"h2"
+                          }
+                      },
+                      {
+                          "element": "htmlElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "<p>Ο άλλος γονέας θα χρειαστεί <a href=\"#\">ταυτοποιημένο λογαριασμό Cy Login</a> για να μπορέσει να δώσει συγκατάθεση.</p>"
+                              }
+                          }
+                      },
+                      {
+                          "element": "textElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "Όταν δοθεί η συγκατάθεση θα σας ενημερώσουμε για να προχωρήσετε με την αίτηση."
+                              }
+                          }
+                      },
+                      {
+                          "element": "textElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "Επιπρόσθετη ειδοποίηση"
+                              },
+                              "type" :"h2"
+                          }
+                      },                   
+                      {
+                          "element": "textElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "Εκτός από το email που στείλαμε στον άλλο γονέα, μπορείτε να στείλετε και εσείς ειδοποίηση. Μπορεί να υπάρξουν χρεώσεις."
+                              }
+                          }
+                      },
+                      {
+                          "element": "htmlElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "<ul id=\"customShareDialog\" class=\"govcy-list-unstyled\"><li class=\"govcy-mb-2\"><a tabindex=\"0\" role=\"button\" class=\"govcy-link-no-visited-state\" id=\"govcyShareBtn\"><svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" class=\"share-icon\" viewBox=\"0 0 16 16\"><path fill-rule=\"evenodd\" d=\"M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z\"/><path fill-rule=\"evenodd\" d=\"M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z\"/></svg>Κοινή χρήση</a></li><li class=\"govcy-mb-2\"><a role=\"button\" class=\"govcy-link-no-visited-state\" id=\"govcySmsLink\" href=\"sms:?body=\"><svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" class=\"share-icon\" viewBox=\"0 0 16 16\"><path d=\"M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z\"/><path d=\"M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5\"/></svg>SMS</a></li><li class=\"govcy-mb-2\"><a role=\"button\" class=\"govcy-link-no-visited-state\" id=\"govcyEmailLink\" href=\"mailto:?subject=&body=\"><svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" class=\"share-icon\" viewBox=\"0 0 16 16\"><path d=\"M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z\"/><path d=\"M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z\"/></svg>Email</a></li></ul>       "
+                              }
+                          }
+                      },
+                      {
+                          "element": "htmlElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "<p class=\"govcy-fw-bolder\">Περιεχόμενο ειδοποίησης</p><pre id=\"govcyShareMessage\" class=\"message-text\"></pre>"
+                              }
+                          }
+                      },
+                      {
+                          "element": "htmlElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "<ul class=\"govcy-list-unstyled\"><li class=\"govcy-mb-2\"><a tabindex=\"0\" role=\"button\" class=\"govcy-link-no-visited-state\" id=\"govcyCopyBtn\"><svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" class=\"share-icon\" viewBox=\"0 0 16 16\"><path fill-rule=\"evenodd\" d=\"M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z\"/></svg>Αντιγραφή ειδοποίησης</a></li></ul>"
+                              }
+                          }
+                      },
+                      {
+                          "element": "htmlElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "<p><a href=\"#\">Επιστροφή στις αιτήσεις</a></p>"
+                              }
+                          }
+                      },
+                      {
+                          "element": "htmlElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "<div id=\"toast\" class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\"></div>"
+                              }
+                          }
+                      },
+                      {
+                          "element": "htmlElement",
+                          "params": {
+                              "text": {
+                                  "en": "Paragraph",
+                                  "el": "<script>const shareData={title:'Αίτημα για συγκατάθεση',text:'Δώσε συγκατάθεση εδώ https://gov-cy.github.io/govcy-frontend-renderer-tester/crmd-consent/login/1/ για έκδοση διαβατηρίου για: Αντρέας Αντρέου',url:'https://gov-cy.github.io/govcy-frontend-renderer-tester/crmd-consent/login/1/'};const copySuccessMessage='Αντιγράφηκε';function showToast(id,message){const toastArea=document.getElementById(id);toastArea.innerText=message;toastArea.classList.add(\"show\");setTimeout(function(){toastArea.classList.remove(\"show\")},3000)}const shareButton=document.getElementById('govcyShareBtn');const copyButton=document.getElementById('govcyCopyBtn');const shareMessage=document.getElementById('govcyShareMessage');const smsLink=document.getElementById('govcySmsLink');const emailLink=document.getElementById('govcyEmailLink');const encodedTitle=encodeURIComponent(shareData.title);const encodedMessage=encodeURIComponent(shareData.text);smsLink.href=`sms:?body=${encodedMessage}`;emailLink.href=`mailto:?subject=${encodedTitle}&body=${encodedMessage}`;shareMessage.innerText=shareData.text;if(navigator.share){shareButton.addEventListener('click',async()=>{try{await navigator.share(shareData);console.log('Content shared successfully!')}catch(error){console.error('Error sharing content:',error)}});shareButton.addEventListener('keydown',(event)=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();shareButton.click()}})}else{shareButton.style.display='none'}if(navigator.clipboard){copyButton.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(shareData.text);showToast('toast',copySuccessMessage);console.log('Message copied to clipboard!')}catch(err){console.error('Copying failed. Please manually copy the text below.')}});copyButton.addEventListener('keydown',(event)=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();copyButton.click()}})}else{copyButton.style.display='none'}</script>"
+                              }
+                          }
+                      }
+                    ]
+                }
+            ]
+        }
     }
-  ] 
+  ], 
+    "routes" : {
+        "all" : [
+            ""
+            ,"login"
+            ,"consent-pending-list/"
+            ,"consent-request/1/"
+        ]
+    } 
 }

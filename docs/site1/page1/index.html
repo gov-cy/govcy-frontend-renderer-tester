@@ -65,10 +65,10 @@
     <main class="govcy-container" id="mainContainer">
         <div class="govcy-row">
             <article class="govcy-col-12">
-                <form action="" class="govcy-form" novalidate="">
+                <form id="DSFPrototypeForm" action="" class="govcy-form" novalidate="">
     <div class="govcy-form-control">
     <h1><label id="inName-label" class="govcy-label govcy-label-primary" for="inName">What is your name?</label></h1><input id="inName" name="inName" type="text" spellcheck="false"  class="govcy-text-input">
-    </div><button type="button"class="govcy-btn-primary" onclick="location.href='../page2'">Continue</button></form>
+    </div><button type="submit"class="govcy-btn-primary">Continue1</button></form>
             </article>
         </div>
     </main>
@@ -103,8 +103,11 @@
         
     </section>    
     <script src="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist/js/govcy.uds.min.js" integrity="sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+" crossorigin="anonymous"></script>
-  
-                    <script src="/js/route.js"></script>
+  <script>
+ const DSFpathPrefix = '/govcy-frontend-renderer-tester';
+const DSFroutes={"all":["site1/page1/","site1/page2/","site1/test/"]};</script>
+
+                    <script src="/govcy-frontend-renderer-tester/js/route.js"></script>
                 
 </body>
 </html>

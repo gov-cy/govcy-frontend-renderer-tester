@@ -111,7 +111,7 @@
         </dt>
         <dd class="govcy-summary-list-value">2/10/2024</dd>
     </div>
-</dl><form action="" class="govcy-form" novalidate="">
+</dl><form id="DSFPrototypeForm" action="" class="govcy-form" novalidate="">
     <fieldset class="govcy-fieldset">
 
         <legend class="govcy-legend">Δίνετε τη συγκατάθεσή σας;</legend>
@@ -160,8 +160,11 @@
         
     </section>    
     <script src="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist/js/govcy.uds.min.js" integrity="sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+" crossorigin="anonymous"></script>
-  
-                    <script src="/js/route.js"></script>
+  <script>
+ const DSFpathPrefix = '/govcy-frontend-renderer-tester';
+const DSFroutes={"all":["","login","consent-pending-list/","consent-request/1/"]};</script>
+
+                    <script src="/govcy-frontend-renderer-tester/js/route.js"></script>
                 
 </body>
 </html>

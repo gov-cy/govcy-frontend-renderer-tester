@@ -53,6 +53,7 @@
                           {
                               "element": "form",
                               "params" : {
+                                  "id": "DSFPrototypeForm",
                                   "elements" :[
                                       {
                                           "element": "textInput",
@@ -70,10 +71,10 @@
                                           "element": "button",
                                           "params": {
                                               "text": {
-                                                  "en": "Continue",
+                                                  "en": "Continue1",
                                                   "el": "Συνέχεια"
                                               },
-                                              "prototypeNavigate": "../page2"
+                                              "type": "submit"
                                           }
                                       }
                                   ]
@@ -141,5 +142,12 @@
               ]
           }
       }
-  ] 
+  ], 
+  "routes" : {
+      "all" : [
+          "site1/page1/"
+          ,"site1/page2/"
+          ,"site1/test/"
+      ]
+  } 
 }
