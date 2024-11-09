@@ -1,0 +1,632 @@
+{
+    "site": {
+        "id": "tables-demo",
+        "lang": "el",
+        "title": {
+            "en": "Service title",
+            "el": "Τιτλός υπηρεσίας"
+        },
+        "headerTitle": {
+            "en": "Header title",
+            "el": "Τιτλός επικεφαλιδας"
+        },
+        "description": {
+            "en": "Service description",
+            "el": "Περιγραφή υπηρεσίας"
+        },
+        "url": "https://gov.cy",
+        "isTesting": true,
+        "cdn": {
+            "dist": "https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist",
+            "cssIntegrity": "sha384-1zLHWOtnS0hOIz5mVEPZp0UH5gUE6eo0CQcCGA3sF2TyYhHyKOd3Ni8Iy/NjEASU",
+            "jsIntegrity": "sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+"
+        }
+    },
+    "pages": [
+        {
+            "pageData": {
+                "url": "",
+                "title": {
+                    "en": "Tables demo",
+                    "el": "Tables demo"
+                },
+                "layout": "layouts/govcyBase.njk",
+                "mainLayout": "max-width"
+            },
+            "pageTemplate": {
+                "sections": [
+                    {
+                        "name": "beforeMain",
+                        "elements": [
+                            {
+                                "element": "backLink",
+                                "params": {}
+                            }
+                        ]
+                    },
+                    {
+                        "name": "main",
+                        "elements": [
+                            {
+                                "element": "textElement",
+                                "params": {
+                                    "text": {
+                                        "en": "Vertical responsive table",
+                                        "el": "Vertical responsive table"
+                                    },
+                                    "type": "h2"
+                                }
+                            },
+                            {
+                                "element": "table",
+                                "params": {
+                                    "id": "verticalTable",
+                                    "firstCellIsHeader": true,
+                                    "responsiveType": "vertical-no-headers",
+
+                                    "head": [
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Αριθμός αίτησης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Τύπος αίτησης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Ημερομηνία αίτησης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Ημερομηνία διεκπεραίωσης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Κατάσταση αίτησης"
+                                            }
+                                        }
+                                    ],
+                                    "rows": [
+                                        [
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "<a href='#'>12345</a>"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Εκπαιδευόμενοι Λογιστές"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "2/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "2/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "tag",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Εκκρεμής - Εγκριμένη Εξουσιοδότηση"
+                                                            },
+                                                            "classes": "govcy-tag-green"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "<a href='#'>34568</a>"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Υψηλής Ειδίκευσης"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "10/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "10/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "tag",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Παγοποιημένη - Εκκρεμή Εξουσιοδότηση"
+                                                            },
+                                                            "classes": "govcy-tag-yellow"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    ]
+                                }
+                            },
+                            {
+                                "element": "textElement",
+                                "params": {
+                                    "text": {
+                                        "en": "Vertical responsive table with headers",
+                                        "el": "Vertical responsive table with headers"
+                                    },
+                                    "type": "h2"
+                                }
+                            },
+                            {
+                                "element": "table",
+                                "params": {
+                                    "id": "verticalHeadersTable",
+                                    "firstCellIsHeader": true,
+                                    "responsiveType": "vertical-headers",
+
+                                    "head": [
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Αριθμός αίτησης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Τύπος αίτησης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Ημερομηνία αίτησης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Ημερομηνία διεκπεραίωσης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Κατάσταση αίτησης"
+                                            }
+                                        }
+                                    ],
+                                    "rows": [
+                                        [
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "<a href='#'>12345</a>"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Εκπαιδευόμενοι Λογιστές"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "2/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "2/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "tag",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Εκκρεμής - Εγκριμένη Εξουσιοδότηση"
+                                                            },
+                                                            "classes": "govcy-tag-green"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "<a href='#'>34568</a>"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Υψηλής Ειδίκευσης"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "10/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "10/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "tag",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Παγοποιημένη - Εκκρεμή Εξουσιοδότηση"
+                                                            },
+                                                            "classes": "govcy-tag-yellow"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    ]
+                                }
+                            },
+                            {
+                                "element": "textElement",
+                                "params": {
+                                    "text": {
+                                        "en": "Horisontal responsive table",
+                                        "el": "Horisontal responsive table"
+                                    },
+                                    "type": "h2"
+                                }
+                            },
+                            {
+                                "element": "table",
+                                "params": {
+                                    "id": "horisontalTable",
+                                    "firstCellIsHeader": true,
+                                    "responsiveType": "horisontal",
+
+                                    "head": [
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Αριθμός αίτησης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Τύπος αίτησης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Ημερομηνία αίτησης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Ημερομηνία διεκπεραίωσης"
+                                            }
+                                        },
+                                        {
+                                            "text": {
+                                                "en": "",
+                                                "el": "Κατάσταση αίτησης"
+                                            }
+                                        }
+                                    ],
+                                    "rows": [
+                                        [
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "<a href='#'>12345</a>"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Εκπαιδευόμενοι Λογιστές"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "2/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "2/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "tag",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Εκκρεμής - Εγκριμένη Εξουσιοδότηση"
+                                                            },
+                                                            "classes": "govcy-tag-green"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "<a href='#'>34568</a>"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Υψηλής Ειδίκευσης"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "10/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "htmlElement",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "10/10/2024"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elements":[
+                                                    {
+                                                        "element": "tag",
+                                                        "params": {
+                                                            "text": {
+                                                                "en": "",
+                                                                "el": "Παγοποιημένη - Εκκρεμή Εξουσιοδότηση"
+                                                            },
+                                                            "classes": "govcy-tag-yellow"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    ]
+                                }
+                            },
+                            {
+                                "element": "htmlElement",
+                                "params": {
+                                    "text": {
+                                        "en": "",
+                                        "el": "<link href=\"https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css\"rel=\"stylesheet\"type=\"text/css\"><div class=\"govcy-table-responsive\"><table class=\"govcy-table\"id=\"dataTable\"><thead><tr><th>Αριθμός αίτησης</th><th>Τύπος αίτησης</th><th>Ημερομηνία αίτησης</th><th>Ημερομηνία διεκπεραίωσης</th><th>Κατάσταση αίτησης</th></tr></thead><tbody><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">12345</a></th><td>Εκπαιδευόμενοι Λογιστές</td><td>2/10/2024</td><td>2/10/2024</td><td><span class=\"govcy-tag govcy-tag-green\">Εκκρεμής - Εγκριμένη Εξουσιοδότηση</span></td></tr><tr><th scope=\"row\"><a href=\"#\">34568</a></th><td>Υψηλής Ειδίκευσης</td><td>10/10/2024</td><td>10/10/2024</td><td><span class=\"govcy-tag govcy-tag-yellow\">Παγοποιημένη - Εκκρεμή Εξουσιοδότηση</span></td></tr></tbody></table></div><script language=\"javascript\"src=\"https://code.jquery.com/jquery-3.5.1.js\"type=\"text/javascript\"></script><script language=\"javascript\"src=\"https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js\"type=\"text/javascript\"></script><script language=\"javascript\"src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js\"type=\"text/javascript\"></script><script language=\"javascript\"src=\"https://cdn.datatables.net/plug-ins/1.13.4/sorting/datetime-moment.js\"type=\"text/javascript\"></script><script>document.addEventListener('DOMContentLoaded', function () {$.fn.dataTable.moment( 'DD/MM/YYYY' );let table = new DataTable('#dataTable', {scrollX: true, dom: 'frtip'});});</script>"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
