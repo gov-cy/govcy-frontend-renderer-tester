@@ -101,7 +101,7 @@
             
     <ul class="list-inline govcy-my-0">
         <li class="list-inline-item"><a href="../person-search-name/?route=review">Αλλαγή
-                <span class="govcy-visually-hidden"> Σχέση με το άτομο που γίνεται ο έλεγχος</span>
+                <span class="govcy-visually-hidden"> Στοιχεία ατόμου που αναζητείτε</span>
                 </a>
         </li>
     </ul>
@@ -116,7 +116,7 @@
             
     <ul class="list-inline govcy-my-0">
         <li class="list-inline-item"><a href="../person-search-id-pass/?route=review">Αλλαγή
-                <span class="govcy-visually-hidden"> Σχέση με το άτομο που γίνεται ο έλεγχος</span>
+                <span class="govcy-visually-hidden"> Αριθμός Κυπριακής ταυτότητας ή διαβατηρίου του ατόμου που αναζητείτε</span>
                 </a>
         </li>
     </ul>
@@ -131,7 +131,7 @@
             
     <ul class="list-inline govcy-my-0">
         <li class="list-inline-item"><a href="../person-search-optional/?route=review">Αλλαγή
-                <span class="govcy-visually-hidden"> Σχέση με το άτομο που γίνεται ο έλεγχος</span>
+                <span class="govcy-visually-hidden"> Επιπλέον στοιχεία  για το άτομο που αναζητείτε</span>
                 </a>
         </li>
     </ul>
@@ -146,13 +146,26 @@
             
     <ul class="list-inline govcy-my-0">
         <li class="list-inline-item"><a href="../person-search-other/?route=review">Αλλαγή
-                <span class="govcy-visually-hidden"> Σχέση με το άτομο που γίνεται ο έλεγχος</span>
+                <span class="govcy-visually-hidden"> Άλλα στοιχεία  για το άτομο που αναζητείτε</span>
                 </a>
         </li>
     </ul>
         </dd>
     </div>
-</dl><button type="submit"class="govcy-btn-primary">Συνέχεια</button></form>
+</dl><fieldset class="govcy-fieldset">
+
+        <legend class="govcy-legend">Θέλετε να προχωρήσετε την αίτηση έρευνας στο μητρώο πληθυσμού;</legend>
+        <div class="govcy-form-control">
+    
+            
+            <div class="govcy-radio">
+    <input class="govcy-radio-input" name="confirm" value="yes" type="radio" id="confirm-option-1" >
+    <label class="govcy-label" for="confirm-option-1">Ναι, πληρωμή €50</label>
+</div><div class="govcy-radio">
+    <input class="govcy-radio-input" name="confirm" value="no" type="radio" id="confirm-option-2" >
+    <label class="govcy-label" for="confirm-option-2">Όχι, επιστροφή στην αρχική σελίδα</label>
+</div></div>
+    </fieldset><button type="submit"class="govcy-btn-success">Πληρωμή</button></form>
             </article>
         </div>
     </main>
@@ -189,7 +202,7 @@
     <script src="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist/js/govcy.uds.min.js" integrity="sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+" crossorigin="anonymous"></script>
   <script>
                                 const DSFpathPrefix = '/govcy-frontend-renderer-tester';
-                                const DSFroutes={"all":["crmd-investigation/relation/","crmd-investigation/person-search-name/","crmd-investigation/person-search-id-pass/","crmd-investigation/person-search-optional/","crmd-investigation/person-search-other/","crmd-investigation/review/","crmd-investigation/application-response/"],"review":["crmd-investigation/review/","crmd-investigation/application-response/"]};
+                                const DSFroutes={"all":["crmd-investigation/login/","crmd-investigation/relation/","crmd-investigation/person-search-name/","crmd-investigation/person-search-id-pass/","crmd-investigation/person-search-optional/","crmd-investigation/person-search-other/","crmd-investigation/review/","crmd-investigation/payment/","crmd-investigation/application-response/"],"unverified":["crmd-investigation/login/","crmd-investigation/applicant/","crmd-investigation/relation/","crmd-investigation/person-search-name/","crmd-investigation/person-search-id-pass/","crmd-investigation/person-search-optional/","crmd-investigation/person-search-other/","crmd-investigation/review/","crmd-investigation/payment/","crmd-investigation/application-response/"],"review":["crmd-investigation/review/","crmd-investigation/application-response/"]};
                             </script>
                             
                     <script src="/govcy-frontend-renderer-tester/js/route.js"></script>

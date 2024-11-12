@@ -68,37 +68,34 @@
                 <form id="DSFPrototypeForm" action="" class="govcy-form" novalidate="">
     <fieldset class="govcy-fieldset">
 
-        <legend class="govcy-legend"><h1>Ποια είναι η σχέση σας με προσώπου που θέλετε να ψάξουμε;</h1></legend>
+        <legend class="govcy-legend"><h1>Ποια είναι η σχέση σας με το προσώπο που θέλετε να ψάξουμε;</h1></legend>
         <div class="govcy-form-control">
     
             
             <div class="govcy-radio">
-    <input class="govcy-radio-input" name="inRelation" value=" " type="radio" id="inRelation-option-1" >
-    <label class="govcy-label" for="inRelation-option-1">Επιλέξτε σχέση</label>
+    <input class="govcy-radio-input" name="inRelation" value="parent" type="radio" id="inRelation-option-1" >
+    <label class="govcy-label" for="inRelation-option-1">Είναι γονέας μου</label>
 </div><div class="govcy-radio">
-    <input class="govcy-radio-input" name="inRelation" value="parent" type="radio" id="inRelation-option-2" >
-    <label class="govcy-label" for="inRelation-option-2">Γονέας</label>
+    <input class="govcy-radio-input" name="inRelation" value="brother" type="radio" id="inRelation-option-2" >
+    <label class="govcy-label" for="inRelation-option-2">Είναι αδελφός ή Αδελφή μου</label>
 </div><div class="govcy-radio">
-    <input class="govcy-radio-input" name="inRelation" value="brother" type="radio" id="inRelation-option-3" >
-    <label class="govcy-label" for="inRelation-option-3">Αδελφός ή Αδελφή</label>
+    <input class="govcy-radio-input" name="inRelation" value="husband" type="radio" id="inRelation-option-3" >
+    <label class="govcy-label" for="inRelation-option-3">Είναι σύζυγος μου</label>
 </div><div class="govcy-radio">
-    <input class="govcy-radio-input" name="inRelation" value="husband" type="radio" id="inRelation-option-4" >
-    <label class="govcy-label" for="inRelation-option-4">Σύζυγος</label>
+    <input class="govcy-radio-input" name="inRelation" value="child" type="radio" id="inRelation-option-4" >
+    <label class="govcy-label" for="inRelation-option-4">Είναι παιδί μου</label>
 </div><div class="govcy-radio">
-    <input class="govcy-radio-input" name="inRelation" value="child" type="radio" id="inRelation-option-5" >
-    <label class="govcy-label" for="inRelation-option-5">Παιδί</label>
+    <input class="govcy-radio-input" name="inRelation" value="grandpatent" type="radio" id="inRelation-option-5" >
+    <label class="govcy-label" for="inRelation-option-5">Είναι παππούς ή γιαγιά μου</label>
 </div><div class="govcy-radio">
-    <input class="govcy-radio-input" name="inRelation" value="grandpatent" type="radio" id="inRelation-option-6" >
-    <label class="govcy-label" for="inRelation-option-6">Παππούς ή γιαγιά</label>
+    <input class="govcy-radio-input" name="inRelation" value="greatgrandpatent" type="radio" id="inRelation-option-6" >
+    <label class="govcy-label" for="inRelation-option-6">Είναι πρόπαππους ή πρόγιαγια μου</label>
 </div><div class="govcy-radio">
-    <input class="govcy-radio-input" name="inRelation" value="greatgrandpatent" type="radio" id="inRelation-option-7" >
-    <label class="govcy-label" for="inRelation-option-7">Πρόπαππους ή πρόγιαγια</label>
+    <input class="govcy-radio-input" name="inRelation" value="gradchild" type="radio" id="inRelation-option-7" >
+    <label class="govcy-label" for="inRelation-option-7">Είναι εγγόνι μου</label>
 </div><div class="govcy-radio">
-    <input class="govcy-radio-input" name="inRelation" value="gradchild" type="radio" id="inRelation-option-8" >
-    <label class="govcy-label" for="inRelation-option-8">Εγγόνι</label>
-</div><div class="govcy-radio">
-    <input class="govcy-radio-input" name="inRelation" value="other" type="radio" id="inRelation-option-9"  data-aria-controls="inRelation-option-9-conditional">
-    <label class="govcy-label" for="inRelation-option-9"> <span class="govcy-visually-hidden">Αυτή η επιλογή επεκτείνεται και έχει περισσότερες ερωτήσεις,</span>Άλλη σχέση</label>
+    <input class="govcy-radio-input" name="inRelation" value="other" type="radio" id="inRelation-option-8"  data-aria-controls="inRelation-option-8-conditional">
+    <label class="govcy-label" for="inRelation-option-8"> <span class="govcy-visually-hidden">Αυτή η επιλογή επεκτείνεται και έχει περισσότερες ερωτήσεις,</span>Έχουμς αλλη σχέση</label>
 </div>
     <style>
         .govcy-radio__conditional label,
@@ -106,7 +103,7 @@
             font-size: 1rem !important;
         }
     </style>
-    <div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="inRelation-option-9-conditional">
+    <div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="inRelation-option-8-conditional">
         <div class="govcy-form-control">
     <label id="relationText-label" class="govcy-label govcy-label-primary" for="relationText">Ποια είναι η σχέση σας με το άτομο που ψάχνουμε;</label><input id="relationText" name="relationText" type="text" spellcheck="false"  class="govcy-text-input">
     </div>
@@ -150,7 +147,7 @@
     <script src="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist/js/govcy.uds.min.js" integrity="sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+" crossorigin="anonymous"></script>
   <script>
                                 const DSFpathPrefix = '/govcy-frontend-renderer-tester';
-                                const DSFroutes={"all":["crmd-investigation/relation/","crmd-investigation/person-search-name/","crmd-investigation/person-search-id-pass/","crmd-investigation/person-search-optional/","crmd-investigation/person-search-other/","crmd-investigation/review/","crmd-investigation/application-response/"],"review":["crmd-investigation/review/","crmd-investigation/application-response/"]};
+                                const DSFroutes={"all":["crmd-investigation/login/","crmd-investigation/relation/","crmd-investigation/person-search-name/","crmd-investigation/person-search-id-pass/","crmd-investigation/person-search-optional/","crmd-investigation/person-search-other/","crmd-investigation/review/","crmd-investigation/payment/","crmd-investigation/application-response/"],"unverified":["crmd-investigation/login/","crmd-investigation/applicant/","crmd-investigation/relation/","crmd-investigation/person-search-name/","crmd-investigation/person-search-id-pass/","crmd-investigation/person-search-optional/","crmd-investigation/person-search-other/","crmd-investigation/review/","crmd-investigation/payment/","crmd-investigation/application-response/"],"review":["crmd-investigation/review/","crmd-investigation/application-response/"]};
                             </script>
                             
                     <script src="/govcy-frontend-renderer-tester/js/route.js"></script>
