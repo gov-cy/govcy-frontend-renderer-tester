@@ -109,6 +109,15 @@
                             }
                         },
                         {
+                            "element": "htmlElement",
+                            "params": {
+                                "text": {
+                                    "en": "Paragraph",
+                                    "el": "<p>Χρειάζεται να ξεκινήσει την αίτηση ο άλλος γονέας πρώτα.</p>"
+                                }
+                            }
+                        },
+                        {
                             "element": "textElement",
                             "params": {
                                 "text": {
@@ -496,7 +505,7 @@
                                                                 ]
                                                             },
                                                             {
-                                                                "key":{"en":"Reason","el":"Λόγος αίτησης"},
+                                                                "key":{"en":"Reason","el":"Λόγος"},
                                                                 "value":
                                                                 [
                                                                     {"element":"htmlElement","params":{"text":{"en":"Reason","el":"Έχει χαθεί"} } }
@@ -623,7 +632,7 @@
                                                                 ]
                                                             },
                                                             {
-                                                                "key":{"en":"Reason","el":"Λόγος αίτησης"},
+                                                                "key":{"en":"Reason","el":"Λόγος"},
                                                                 "value":
                                                                 [
                                                                     {"element":"htmlElement","params":{"text":{"en":"Reason","el":"Έχει χαθεί"} } }
