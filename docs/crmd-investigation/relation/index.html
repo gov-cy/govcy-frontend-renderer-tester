@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Social -->
     <meta property="og:description" content="Χρησιμοποιήστε την υπηρεσία αυτή για να κάνετε αίτηση για έρευνα στο αρχείο πληθυσμού">
-    <meta property="og:title" content="Ποια είναι η σχέση σας με προσώπου που θέλετε να ψάξουμε; - Έρευνα στο μητρώο πληθυσμού - gov.cy">
+    <meta property="og:title" content="Ποια είναι η σχέση σας με το προσώπο που θέλετε να ψάξουμε; - Έρευνα στο μητρώο πληθυσμού - gov.cy">
     <meta property="og:url" content="https://gov.cy">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist/img/icons-512.png">
@@ -14,7 +14,7 @@
  
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://gov.cy">
-    <meta property="twitter:title" content="Ποια είναι η σχέση σας με προσώπου που θέλετε να ψάξουμε; - Έρευνα στο μητρώο πληθυσμού - gov.cy">
+    <meta property="twitter:title" content="Ποια είναι η σχέση σας με το προσώπο που θέλετε να ψάξουμε; - Έρευνα στο μητρώο πληθυσμού - gov.cy">
     <meta property="twitter:description" content="Χρησιμοποιήστε την υπηρεσία αυτή για να κάνετε αίτηση για έρευνα στο αρχείο πληθυσμού">
     <meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist/img/icons-512.png">
  
@@ -34,7 +34,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist/css/govcy.uds.min.css" integrity="sha384-1zLHWOtnS0hOIz5mVEPZp0UH5gUE6eo0CQcCGA3sF2TyYhHyKOd3Ni8Iy/NjEASU" crossorigin="anonymous">
     
-    <title>Ποια είναι η σχέση σας με προσώπου που θέλετε να ψάξουμε; - Έρευνα στο μητρώο πληθυσμού - gov.cy</title>
+    <title>Ποια είναι η σχέση σας με το προσώπο που θέλετε να ψάξουμε; - Έρευνα στο μητρώο πληθυσμού - gov.cy</title>
     <meta name="description" content="Χρησιμοποιήστε την υπηρεσία αυτή για να κάνετε αίτηση για έρευνα στο αρχείο πληθυσμού">
 
   </head>
@@ -66,18 +66,18 @@
         <div class="govcy-row">
             <article class="govcy-col-8">
                 <form id="DSFPrototypeForm" action="" class="govcy-form" novalidate="">
-    <fieldset class="govcy-fieldset">
+    <fieldset class="govcy-fieldset" aria-describedby="inRelation-hint ">
 
         <legend class="govcy-legend"><h1>Ποια είναι η σχέση σας με το προσώπο που θέλετε να ψάξουμε;</h1></legend>
         <div class="govcy-form-control">
     
-            
+            <span id="inRelation-hint" class="govcy-hint">Τι σας είναι;</span>
             <div class="govcy-radio">
     <input class="govcy-radio-input" name="inRelation" value="parent" type="radio" id="inRelation-option-1" >
     <label class="govcy-label" for="inRelation-option-1">Είναι γονέας μου</label>
 </div><div class="govcy-radio">
     <input class="govcy-radio-input" name="inRelation" value="brother" type="radio" id="inRelation-option-2" >
-    <label class="govcy-label" for="inRelation-option-2">Είναι αδελφός ή Αδελφή μου</label>
+    <label class="govcy-label" for="inRelation-option-2">Είναι αδελφός ή αδελφή μου</label>
 </div><div class="govcy-radio">
     <input class="govcy-radio-input" name="inRelation" value="husband" type="radio" id="inRelation-option-3" >
     <label class="govcy-label" for="inRelation-option-3">Είναι σύζυγος μου</label>
@@ -105,11 +105,11 @@
     </style>
     <div class="govcy-form-control govcy-form-control-hint govcy-pl-4 govcy-ml-5 govcy-radio__conditional govcy-radio__conditional--hidden" id="inRelation-option-8-conditional">
         <div class="govcy-form-control">
-    <label id="relationText-label" class="govcy-label govcy-label-primary" for="relationText">Ποια είναι η σχέση σας με το άτομο που ψάχνουμε;</label><input id="relationText" name="relationText" type="text" spellcheck="false"  class="govcy-text-input">
+    <label id="relationText-label" class="govcy-label govcy-label-primary" for="relationText">Ποια είναι η σχέση σας με προσώπο που θέλετε να ψάξουμε;</label><input id="relationText" name="relationText" type="text" spellcheck="false"  class="govcy-text-input">
     </div>
     </div></div>
     </fieldset><p>
-            Μπορεί να σας ζητήσουμε στοιχεία για να αποδείξετε την σχέση σας με το πρόσωπο αυτό.
+            Μπορεί να σας ζητήσουμε στοιχεία για να αποδείξετε τη σχέση σας με το πρόσωπο αυτό
         </p><button type="submit"class="govcy-btn-primary">Συνέχεια</button></form>
             </article>
         </div>

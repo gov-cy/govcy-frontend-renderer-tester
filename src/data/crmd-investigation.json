@@ -56,7 +56,7 @@
       {
           "pageData": {
               "url": "",
-              "title" : {"en": "Page title", "el": "Έρευνα στο μητρώο πληθυσμού"},
+              "title" : {"en": "Page title", "el": "Έρευνα στο Αρχείο Πληθυσμού"},
               "layout" : "layouts/govcyBase.njk", 
               "mainLayout" : "two-thirds"
           },
@@ -89,6 +89,16 @@
                                           "params": {
                                               "text": {
                                                   "en": "en",
+                                                  "el": "Έρευνα στο Αρχείο Πληθυσμού"
+                                              },
+                                              "type": "h1"
+                                          }
+                                      },
+                                      {
+                                          "element": "textElement",
+                                          "params": {
+                                              "text": {
+                                                  "en": "en",
                                                   "el": "Τι κάνει αυτή η υπηρεσία"
                                               },
                                               "type": "h2"
@@ -99,7 +109,7 @@
                                           "params": {
                                               "text": {
                                                   "en": "en",
-                                                  "el": "Μπορείτε κάνετε αίτηση για έρευνα στο αρχείο πληθυσμού ...."
+                                                  "el": "Μπορείτε κάνετε αίτηση για έρευνα στο Αρχείο Πληθυσμού για συγκεκριμένο πρόσωπο που πιστεύετε ότι είναι συγγενικό σας. Θα ερευνήσουμε αυτή τη συγγένεια και αν επιβεβαιωθεί θα σας απαντήσουμε μέσα σε 2 μήνες για τη συγγένεια αυτή."
                                               },
                                               "type": "p"
                                           }
@@ -119,7 +129,7 @@
                                           "params": {
                                               "text": {
                                                   "en": "en",
-                                                  "el": "Μπορείτε να χρησημοποιηθεί από όλους"
+                                                  "el": "Μπορείτε να χρησιμοποιήσετε την υπηρεσία αν είστε πάνω από 18 χρόνων. Μπορεί να είστε Κύπριος ή Κύπρια, ή και όχι."
                                               },
                                               "type": "p"
                                           }
@@ -135,23 +145,13 @@
                                           }
                                       },
                                       {
-                                          "element": "textElement",
-                                          "params": {
-                                              "text": {
-                                                  "en": "en",
-                                                  "el": "Θα χρειαστείτε λογαριασμό στο CY Login (πρώην Αριάδνη). Ειναι ένας ασφαλής λογαριασμός, ο οποίος σας δίνει πρόσβαση σε κυβερνητικές υπηρεσίες."
-                                              },
-                                              "type": "p"
+                                        "element": "htmlElement",
+                                        "params": {
+                                          "text": {
+                                            "en": "en",
+                                            "el": "<p>Θα χρειαστείτε <a href=\"#cylogin\">λογαριασμό στο CY Login</a>. Ειναι ένας ασφαλής λογαριασμός, ο οποίος σας δίνει πρόσβαση σε κυβερνητικές υπηρεσίες.</p>"
                                           }
-                                      },
-                                      {
-                                          "element": "htmlElement",
-                                          "params": {
-                                              "text": {
-                                                  "en": "en",
-                                                  "el": "<p>Αν θα υποβάλετε στοιχεία ως άτομο θα χρειαστείτε <a href=\"#cylogin\">λογαριασμό CY Login για φυσικά πρόσωπα</a>.</p>"
-                                              }
-                                          }
+                                        }
                                       },
                                       {
                                           "element": "textElement",
@@ -160,7 +160,7 @@
                                                   "en": "en",
                                                   "el": "CY Login αν είστε Κύπριος ή κάτοικος Κύπρου"
                                               },
-                                              "type": "h2"
+                                              "type": "h3"
                                           }
                                       },
                                       {
@@ -168,7 +168,7 @@
                                           "params": {
                                               "text": {
                                                   "en": "en",
-                                                  "el": "<p>Ο <a href=\"#cyloginverification\">λογαριασμός σας στο CY Login θα πρέπει να ταυτοποιηθεί</a> προτού τον χρησιμοποιήσετε για πρώτη φορά. Αυτό σημαίνει πως πρέπει να συνδέσετε την ταυτότητά σας με το CY Login. Μπορείτε να το κάνετε μέσω του online banking σας, <a href=\"#videoconf\">μέσω βιντεοκλήσης</a>, ή με επίσκεψη σε ΚΕΠ ή σε Επαρχιακό Ταχυδρομικό Γραφείο.</p>"
+                                                  "el": "<p>Ο <a href=\"cyloginverified\">λογαριασμός σας στο CY Login θα πρέπει να ταυτοποιηθεί</a> προτού τον χρησιμοποιήσετε για πρώτη φορά. Αυτό σημαίνει πως πρέπει να συνδέσετε την ταυτότητά σας με το CY Login. Μπορείτε να το κάνετε μέσω του online banking σας, <a href=\"cyloginvideo\">μέσω βιντεοκλήσης</a>, ή με επίσκεψη σε ΚΕΠ ή σε Επαρχιακό Ταχυδρομικό Γραφείο.</p>"
                                               }
                                           }
                                       },
@@ -179,7 +179,7 @@
                                                   "en": "en",
                                                   "el": "CY Login αν δεν είστε Κύπριος ούτε κάτοικος Κύπρου"
                                               },
-                                              "type": "h2"
+                                              "type": "h3"
                                           }
                                       },
                                       {
@@ -376,7 +376,7 @@
                             "params" : {
                               "text": {
                                   "en": "CY Login",
-                                  "el":"<style>button.govcy-link-focus{background-color:#fff!important;border:0}button.govcy-link-focus:focus{background-color:#fd0!important}</style><div class=\"govcy-row\"><div class=\"govcy-col-3\"></div><form class=\"govcy-col-6 govcy-form\" id=\"DSFPrototypeForm\" style=\"padding-left:1.5rem;padding-right:1.5rem;padding-top:1.75rem;padding-bottom:1.75rem;border:1px solid rgba(0,0,0,.4);box-shadow:0 1rem 3rem rgb(0 0 0 / 18%)\"><div class=\"\" id=\"alerts\"></div><div class=\"\"><h1 class=\"ariadniTitle\" style=\"color:#6c757d!important;font-size:1.5rem\">Payment platform</h1></div><div><label for=\"card\" class=\"\" style=\"font-size:1rem;font-weight:400;line-height:1.5;color:#212529\">Card number</label><input type=\"text\" class=\"govcy-text-input\" name=\"card\" maxlength=\"100\" style=\"height:38px;border:1px solid #ced4da;border-radius:.25rem;width:180px;margin-left:5px\"></div><div style=\"margin-top:5px\"><label for=\"expiry\" class=\"\" style=\"font-size:1rem;font-weight:400;line-height:1.5;color:#212529\">Expiry Date (Month / Year)</label><input type=\"text\" class=\"govcy-text-input\" name=\"expiry\" maxlength=\"4\" style=\"height:38px;border:1px solid #ced4da;border-radius:.25rem;width:50px;margin-left:5px\"></div><div style=\"margin-top:5px\"><label for=\"cvv\" class=\"\" style=\"font-size:1rem;font-weight:400;line-height:1.5;color:#212529\">CVV2/CSC</label><input type=\"text\" class=\"govcy-text-input\" name=\"cvv\" maxlength=\"2\" style=\"height:38px;border:1px solid #ced4da;border-radius:.25rem;width:50px;margin-left:5px\"></div><button type=\"submit\" class=\"govcy-btn-success\" id=\"nextRoutebtn\">Submit</button></form></div>"
+                                  "el":"<style>button.govcy-link-focus{background-color:#fff!important;border:0}button.govcy-link-focus:focus{background-color:#fd0!important}</style><div class=\"govcy-row\"><div class=\"govcy-col-3\"></div><form class=\"govcy-col-6 govcy-form\" id=\"DSFPrototypeForm\" style=\"padding-left:1.5rem;padding-right:1.5rem;padding-top:1.75rem;padding-bottom:1.75rem;border:1px solid rgba(0,0,0,.4);box-shadow:0 1rem 3rem rgb(0 0 0 / 18%)\"><div class=\"\" id=\"alerts\"></div><div class=\"\"><h1 class=\"ariadniTitle\" style=\"color:#6c757d!important;font-size:1.5rem\">Payment platform</h1></div><div><label for=\"card\" class=\"\" style=\"font-size:1rem;font-weight:400;line-height:1.5;color:#212529\">Card number</label><input type=\"text\" class=\"govcy-text-input\" name=\"card\" maxlength=\"100\" style=\"height:38px;border:1px solid #ced4da;border-radius:.25rem;width:180px;margin-left:5px\"></div><div style=\"margin-top:5px\"><label for=\"expiry\" class=\"\" style=\"font-size:1rem;font-weight:400;line-height:1.5;color:#212529\">Expiry Date (Month / Year)</label><input type=\"text\" class=\"govcy-text-input\" name=\"expiry\" maxlength=\"4\" style=\"height:38px;border:1px solid #ced4da;border-radius:.25rem;width:50px;margin-left:5px\"></div><div style=\"margin-top:5px\"><label for=\"cvv\" class=\"\" style=\"font-size:1rem;font-weight:400;line-height:1.5;color:#212529\">CVV2/CSC</label><input type=\"text\" class=\"govcy-text-input\" name=\"cvv\" maxlength=\"2\" style=\"height:38px;border:1px solid #ced4da;border-radius:.25rem;width:50px;margin-left:5px\"></div><button type=\"submit\" class=\"govcy-btn-success govcy-mt-3\" id=\"nextRoutebtn\">Submit</button></form></div>"
                               }
                             }
                         }
@@ -388,7 +388,7 @@
       {
           "pageData": {
               "url": "relation",
-              "title" : {"en": "Page 1", "el": "Ποια είναι η σχέση σας με προσώπου που θέλετε να ψάξουμε;"},
+              "title" : {"en": "Page 1", "el": "Ποια είναι η σχέση σας με το προσώπο που θέλετε να ψάξουμε;"},
               "layout" : "layouts/govcyBase.njk", 
               "mainLayout" : "two-thirds"
           },
@@ -422,6 +422,10 @@
                                                   "en": "Select",
                                                   "el": "Ποια είναι η σχέση σας με το προσώπο που θέλετε να ψάξουμε;"
                                               },
+                                              "hint": {
+                                                  "en": "Select",
+                                                  "el": "Τι σας είναι;"
+                                              },
                                               "items": [
                                                 {
                                                     "value": "parent",
@@ -429,7 +433,7 @@
                                                 },
                                                 {
                                                     "value": "brother",
-			                                        "text": {"en":"Select","el":"Είναι αδελφός ή Αδελφή μου"}
+			                                        "text": {"en":"Select","el":"Είναι αδελφός ή αδελφή μου"}
                                                 },
                                                 {
                                                     "value": "husband",
@@ -458,7 +462,7 @@
                                                         {
                                                             "element": "textInput",
                                                             "params": {
-                                                                "label":{"en":"English","el":"Ποια είναι η σχέση σας με το άτομο που ψάχνουμε;"}
+                                                                "label":{"en":"English","el":"Ποια είναι η σχέση σας με προσώπο που θέλετε να ψάξουμε;"}
                                                                 ,"id":"relationText"
                                                                 ,"name":"relationText"
                                                             }
@@ -473,7 +477,7 @@
                                           "params": {
                                               "text": {
                                                   "en": "Text",
-                                                  "el": "Μπορεί να σας ζητήσουμε στοιχεία για να αποδείξετε την σχέση σας με το πρόσωπο αυτό."
+                                                  "el": "Μπορεί να σας ζητήσουμε στοιχεία για να αποδείξετε τη σχέση σας με το πρόσωπο αυτό"
                                               }
                                           }
                                       },
@@ -498,7 +502,7 @@
       {
           "pageData": {
               "url": "person-search-name",
-              "title" : {"en": "Page 1", "el": "Ποια είναι τα στοιχεία του προσώπου που θέλετε να ψάξουμε;"},
+              "title" : {"en": "Page 1", "el": "Δώστε οποιαδήποτε στοιχεία για το προσώπου που θέλετε να ψάξουμε"},
               "layout" : "layouts/govcyBase.njk", 
               "mainLayout" : "two-thirds"
           },
@@ -527,7 +531,7 @@
                                           "params": {
                                               "text": {
                                                   "en": "Text",
-                                                  "el": "Ποια είναι τα στοιχεία του προσώπου που θέλετε να ψάξουμε;"
+                                                  "el": "Δώστε οποιαδήποτε στοιχεία για το προσώπου που θέλετε να ψάξουμε"
                                               },
                                               "type" :"h1"
                                           }
@@ -537,7 +541,7 @@
                                           "params": {
                                               "text": {
                                                   "en": "Text",
-                                                  "el": "Δώστε όσο περισσότερα στοιχεία μπορείτε για να μας βοηθήσετε στην έρευνα."
+                                                  "el": "Δώστε όσο περισσότερα στοιχεία μπορείτε για να μας βοηθήσετε στην έρευνα"
                                               }
                                           }
                                       },
@@ -610,7 +614,7 @@
       {
           "pageData": {
               "url": "person-search-id-pass",
-              "title" : {"en": "Page 1", "el": "Ποιος είναι ο αριθμός κυπριακής ταυτότητας ή διαβατηρίου του προσώπου αυτού;"},
+              "title" : {"en": "Page 1", "el": "Ξέρετε αριθμό κυπριακής ταυτότητας ή διαβατηρίου του προσώπου αυτού;"},
               "layout" : "layouts/govcyBase.njk", 
               "mainLayout" : "two-thirds"
           },
@@ -639,7 +643,7 @@
                                           "params": {
                                               "text": {
                                                   "en": "Text",
-                                                  "el": "Ποιος είναι ο αριθμός κυπριακής ταυτότητας ή διαβατηρίου του προσώπου αυτού;"
+                                                  "el": "Ξέρετε αριθμό κυπριακής ταυτότητας ή διαβατηρίου του προσώπου αυτού;"
                                               },
                                               "type" :"h1"
                                           }
@@ -649,7 +653,7 @@
                                           "params": {
                                               "text": {
                                                   "en": "Text",
-                                                  "el": "Δώστε όσο περισσότερα στοιχεία μπορείτε για να μας βοηθήσετε στην έρευνα."
+                                                  "el": "Δώστε όσο περισσότερα στοιχεία μπορείτε για να μας βοηθήσετε στην έρευνα"
                                               }
                                           }
                                       },
@@ -662,17 +666,25 @@
                                                   "en": "Text",
                                                   "el": "Αριθμός ταυτότητας"
                                               },
+                                              "hint": {
+                                                  "en": "Text",
+                                                  "el": "Κυπριακή"
+                                              },
                                               "fixedWidth":"20"
-                                          }
-                                      },
-                                      {
-                                          "element": "textInput",
-                                          "params": {
+                                            }
+                                          },
+                                          {
+                                            "element": "textInput",
+                                            "params": {
                                               "id": "searchPassport",
                                               "name": "searchPassport",
                                               "label": {
+                                                "en": "Text",
+                                                "el": "Αριθμός διαβατηρίου"
+                                              },
+                                              "hint": {
                                                   "en": "Text",
-                                                  "el": "Αριθμός διαβατηρίου"
+                                                  "el": "Κυπριακό"
                                               },
                                               "fixedWidth":"20"
                                           }
@@ -685,6 +697,10 @@
                                               "label": {
                                                   "en": "Text",
                                                   "el": "Έτος έκδοσης διαβατηρίου"
+                                                },
+                                              "hint": {
+                                                  "en": "Text",
+                                                  "el": "Εισαγάγετε χρονιά. Μπορεί να είναι ‘1920’ ή ‘μεταξύ 1920 και 1925’"
                                                 },
                                               "fixedWidth":"4"
                                             }
@@ -710,7 +726,7 @@
       {
           "pageData": {
               "url": "person-search-optional",
-              "title" : {"en": "Page 1", "el": "Ξέρετε άλλες πληροφορίες για το πρόσωπο αυτό;"},
+              "title" : {"en": "Page 1", "el": "Ξέρετε άλλα στοιχεία του προσώπου αυτού;"},
               "layout" : "layouts/govcyBase.njk", 
               "mainLayout" : "two-thirds"
           },
@@ -739,7 +755,7 @@
                                           "params": {
                                               "text": {
                                                   "en": "Text",
-                                                  "el": "Ξέρετε άλλες πληροφορίες για το πρόσωπο αυτό;"
+                                                  "el": "Ξέρετε άλλα στοιχεία του προσώπου αυτού;"
                                               },
                                               "type" :"h1"
                                           }
@@ -749,7 +765,7 @@
                                           "params": {
                                               "text": {
                                                   "en": "Text",
-                                                  "el": "Δώστε όσο περισσότερα στοιχεία μπορείτε για να μας βοηθήσετε στην έρευνα."
+                                                  "el": "Δώστε όσο περισσότερα στοιχεία μπορείτε για να μας βοηθήσετε στην έρευνα"
                                               }
                                           }
                                       },
@@ -879,7 +895,7 @@
               "url": "review",
               "title" : {"en": "Page 1", "el": "Ελέγξτε τα στοιχεία της αίτησης "},
               "layout" : "layouts/govcyBase.njk", 
-              "mainLayout" : "max-width"
+              "mainLayout" : "two-thirds"
           },
           "pageTemplate": {
               "sections" :[
@@ -928,11 +944,11 @@
                                                       "key":{"en":"key","el":"Στοιχεία αιτητή"},
                                                       "value":
                                                       [
-                                                          {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Όνομα</dt><dd class=\"govcy-summary-list-value-internal\">ΑΝΔΡΕΑΣ ΑΝΔΡΕΟΥ</dd><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία Γέννησης</dt><dd class=\"govcy-summary-list-value-internal\">1/3/1970</dd></dl>"} } }
+                                                          {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Όνομα</dt><dd class=\"govcy-summary-list-value-internal\">ΑΝΔΡΕΑΣ ΑΝΔΡΕΟΥ</dd><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία Γέννησης</dt><dd class=\"govcy-summary-list-value-internal\">13/3/1970</dd></dl>"} } }
                                                       ]
                                                   },
                                                   {
-                                                      "key":{"en":"key","el":"Σχέση με το άτομο που γίνεται ο έλεγχος"},
+                                                      "key":{"en":"key","el":"Το άτομο που ερευνάτε είναι για εσάς:"},
                                                       "value":
                                                       [
                                                           {"element":"htmlElement","params":{"text":{"en":"value","el":"Παππούς"} } }
@@ -947,22 +963,22 @@
                                                       ]
                                                   },
                                                   {
-                                                      "key":{"en":"key","el":"Στοιχεία ατόμου που αναζητείτε"},
+                                                      "key":{"en":"key","el":"Πληροφορίες για το άτομο που ερευνάτε"},
                                                       "value":
                                                       [
-                                                          {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Όνομα</dt><dd class=\"govcy-summary-list-value-internal\">ΔΗΜΗΤΡΗΣ</dd><dt class=\"govcy-summary-list-key-internal\">Επώνυμο</dt><dd class=\"govcy-summary-list-value-internal\">ΑΝΔΡΕΟΥ</dd><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία Γέννησης</dt><dd class=\"govcy-summary-list-value-internal\">1/4/1930</dd><dt class=\"govcy-summary-list-key-internal\">Τόπος γεννήσεως</dt><dd class=\"govcy-summary-list-value-internal\">Πύργος</dd></dl>"} } }
+                                                          {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Όνομα</dt><dd class=\"govcy-summary-list-value-internal\">ΔΗΜΗΤΡΗΣ</dd><dt class=\"govcy-summary-list-key-internal\">Επώνυμο</dt><dd class=\"govcy-summary-list-value-internal\">ΑΝΔΡΕΟΥ</dd><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία γέννησης</dt><dd class=\"govcy-summary-list-value-internal\">1/4/1930</dd><dt class=\"govcy-summary-list-key-internal\">Τόπος γέννησης</dt><dd class=\"govcy-summary-list-value-internal\">Πύργος</dd></dl>"} } }
                                                       ],
                                                       "actions" :
                                                       [
                                                         {
                                                             "text":{"en":"Change","el":"Αλλαγή"},
                                                             "href": "../person-search-name/?route=review",
-                                                            "visuallyHiddenText": {"en":"key","el":"Στοιχεία ατόμου που αναζητείτε"}
+                                                            "visuallyHiddenText": {"en":"key","el":"Πληροφορίες για το άτομο που ερευνάτε"}
                                                         }
                                                       ]
                                                   },
                                                   {
-                                                      "key":{"en":"key","el":"Αριθμός Κυπριακής ταυτότητας ή διαβατηρίου του ατόμου που αναζητείτε"},
+                                                      "key":{"en":"key","el":"Αριθμός κυπριακής ταυτότητας ή διαβατηρίου"},
                                                       "value":
                                                       [
                                                           {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Αριθμός ταυτότητας</dt><dd class=\"govcy-summary-list-value-internal\">123456789</dd><dt class=\"govcy-summary-list-key-internal\">Αριθμός διαβατηρίου</dt><dd class=\"govcy-summary-list-value-internal\">123456789</dd><dt class=\"govcy-summary-list-key-internal\">Έτος έκδοσης διαβατηρίου</dt><dd class=\"govcy-summary-list-value-internal\">1970</dd></dl>"} } }
@@ -972,27 +988,27 @@
                                                         {
                                                             "text":{"en":"Change","el":"Αλλαγή"},
                                                             "href": "../person-search-id-pass/?route=review",
-                                                            "visuallyHiddenText": {"en":"key","el":"Αριθμός Κυπριακής ταυτότητας ή διαβατηρίου του ατόμου που αναζητείτε"}
+                                                            "visuallyHiddenText": {"en":"key","el":"Αριθμός κυπριακής ταυτότητας ή διαβατηρίου"}
                                                         }
                                                       ]
                                                   },
                                                   {
-                                                      "key":{"en":"key","el":"Επιπλέον στοιχεία  για το άτομο που αναζητείτε"},
+                                                      "key":{"en":"key","el":"Επιπλέον στοιχεία"},
                                                       "value":
                                                       [
-                                                          {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία θανάτου (αν είναι αποθανόν)</dt><dd class=\"govcy-summary-list-value-internal\">1/3/2000</dd><dt class=\"govcy-summary-list-key-internal\">Ονοματεπώνυμο πατέρα</dt><dd class=\"govcy-summary-list-value-internal\">Γιώργος Ανδρέου</dd><dt class=\"govcy-summary-list-key-internal\">Ονοματεπώνυμο μητέρας</dt><dd class=\"govcy-summary-list-value-internal\">Ελένη Αδρέου</dd><dt class=\"govcy-summary-list-key-internal\">Έτος μετάβασης στο Εξωτερικό (αν ισχύει)</dt><dd class=\"govcy-summary-list-value-internal\">1970</dd></dl>"} } }
+                                                          {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία θανάτου</dt><dd class=\"govcy-summary-list-value-internal\">1/3/2000</dd><dt class=\"govcy-summary-list-key-internal\">Ονοματεπώνυμο πατέρα</dt><dd class=\"govcy-summary-list-value-internal\">Γιώργος Ανδρέου</dd><dt class=\"govcy-summary-list-key-internal\">Ονοματεπώνυμο μητέρας</dt><dd class=\"govcy-summary-list-value-internal\">Ελένη Αδρέου</dd><dt class=\"govcy-summary-list-key-internal\">Έτος μετάβασης στο Εξωτερικό</dt><dd class=\"govcy-summary-list-value-internal\">1970</dd></dl>"} } }
                                                       ],
                                                       "actions" :
                                                       [
                                                         {
                                                             "text":{"en":"Change","el":"Αλλαγή"},
                                                             "href": "../person-search-optional/?route=review",
-                                                            "visuallyHiddenText": {"en":"key","el":"Επιπλέον στοιχεία  για το άτομο που αναζητείτε"}
+                                                            "visuallyHiddenText": {"en":"key","el":"Επιπλέον στοιχεία"}
                                                         }
                                                       ]
                                                   },
                                                   {
-                                                      "key":{"en":"key","el":"Άλλα στοιχεία  για το άτομο που αναζητείτε"},
+                                                      "key":{"en":"key","el":"Άλλες πληροφορίες"},
                                                       "value":
                                                       [
                                                           {"element":"htmlElement","params":{"text":{"en":"value","el":"Οι φίλοι του τον φώναζαν Μίτσαρα"} } }
@@ -1002,7 +1018,7 @@
                                                         {
                                                             "text":{"en":"Change","el":"Αλλαγή"},
                                                             "href": "../person-search-other/?route=review",
-                                                            "visuallyHiddenText": {"en":"key","el":"Άλλα στοιχεία  για το άτομο που αναζητείτε"}
+                                                            "visuallyHiddenText": {"en":"key","el":"Άλλες πληροφορίες"}
                                                         }
                                                       ]
                                                   }
@@ -1014,11 +1030,11 @@
                                         "params": {
                                             "id":"confirm"
                                             ,"name":"confirm"
-                                            ,"legend":{"en":"Consent","el":"Θέλετε να προχωρήσετε την αίτηση έρευνας στο μητρώο πληθυσμού;"}
+                                            ,"legend":{"en":"Consent","el":"Θέλετε να υποβάλετε αίτηση για έρευνα;"}
                                             ,"items":[
                                                 {
                                                     "value": "yes",
-                                                    "text": {"en":"Yes","el":"Ναι, πληρωμή €50"}
+                                                    "text": {"en":"Yes","el":"Ναι, πληρωμή €50,00"}
                                                 },
                                                 {
                                                     "value": "no",
@@ -1049,7 +1065,7 @@
       {
           "pageData": {
               "url": "application-response",
-              "title" : {"en": "Page 1", "el": "Η αίτηση για έρευνα  έχει υποβληθεί "},
+              "title" : {"en": "Page 1", "el": "Η αίτησή σας για έρευνα έχει υποβληθεί"},
               "layout" : "layouts/govcyBase.njk", 
               "mainLayout" : "two-thirds"
           },
@@ -1063,7 +1079,7 @@
                             "params": {
                                 "text": {
                                     "en": "Text",
-                                    "el": "<div class=\"govcy-alert-completed-notification\"><div class=\"govcy-alert-completed-notification-body govcy-bg-success\"><h1>Η αίτηση για έρευνα έχει υποβληθεί</h1><p>Αριθμός αναφοράς</p><p class=\"govcy-fw-bold\">3108618</p></div></div>"
+                                    "el": "<div class=\"govcy-alert-completed-notification\"><div class=\"govcy-alert-completed-notification-body govcy-bg-success\"><h1>Η αίτησή σας για έρευνα έχει υποβληθεί</h1><p>Αριθμός αναφοράς</p><p class=\"govcy-fw-bold\">3108618</p></div></div>"
                                 }
                             }
                         },
@@ -1090,6 +1106,15 @@
                             "params": {
                                 "text": {
                                     "en": "Text",
+                                    "el": "<p><a href=\"#feedback\">Βοηθήστε μας να βελτιώσουμε αυτή την υπηρεσία</a></p>"
+                                }
+                            }
+                        },
+                        {
+                          "element": "htmlElement",
+                          "params": {
+                                "text": {
+                                    "en": "Text",
                                     "el": "<h2>Επόμενα βήματα</h2>"
                                 }
                             }
@@ -1099,21 +1124,48 @@
                             "params": {
                                 "text": {
                                     "en": "Text",
-                                    "el": "<p>Μετά την ολοκλήρωση της έρευνας θα επικοινωνήσουμε μαζί σας ........</p>"
+                                    "el": "<p>Έχουμε καταγράψει τα στοιχεία που δώσατε. Θα τα εξετάσουμε και θα επικοινωνήσουμε μαζί σας μέσα σε 10 μέρες για να σας ζητήσουμε διευκρινήσεις ή σχετικά στοιχεία αν χρειαστεί.</p>"
+                                }
+                            }
+                        },
+                        {
+                            "element": "htmlElement",
+                            "params": {
+                                "text": {
+                                    "en": "Text",
+                                    "el": "<p>Μέσα σε 2 μήνες από τη μέρα που θα μας στείλετε τα επιπλέον στοιχεία θα σας απαντήσουμε κατά πόσο έχουμε εντοπίσει το πρόσωπο που αναζητείτε και αν έχει επιβεβαιωθεί η σχέση σας μαζί του.</p>"
+                                }
+                            }
+                        },
+                        {
+                            "element": "htmlElement",
+                            "params": {
+                                "text": {
+                                    "en": "Text",
+                                    "el": "<p>Σας έχουμε στείλει email που επιβεβαιώνει ότι λάβαμε την αίτηση αυτή. Μπορείτε, επίσης, <a href=\"javascript:window.print();\">να εκτυπώσετε ή να αποθηκεύσετε τα στοιχεία της αίτησής σας</a> για το αρχείο σας.</p>"
+                                }
+                            }
+                        },
+                        {
+                            "element": "htmlElement",
+                            "params": {
+                                "text": {
+                                    "en": "Text",
+                                    "el": "<p><a href=\"#feedback\">Βοηθήστε μας να βελτιώσουμε αυτή την υπηρεσία</a></p>"
                                 }
                             }
                         }
-                    ]
-                  }
-              ]
+                      ]
+                    }
+                  ]
           }
       },
       {
           "pageData": {
               "url": "transaction-history",
-              "title" : {"en": "Page 1", "el": "Η αίτηση για έρευνα  έχει υποβληθεί "},
+              "title" : {"en": "Page 1", "el": "Οι αιτήσεις μου για έρευνα"},
               "layout" : "layouts/govcyBase.njk", 
-              "mainLayout" : "max-width"
+              "mainLayout" : "two-thirds"
           },
           "pageTemplate": {
               "sections" :[
@@ -1145,7 +1197,7 @@
                               "params": {
                                   "text": {
                                       "en": "",
-                                      "el": "Οι διαδικτυακές αιτήσεις σας για έρευνα και οι διαδικτυακές αποδείξεις πληρωμής σας."
+                                      "el": "Οι διαδικτυακές αιτήσεις σας για έρευνα στο Αρχείο Πληθυσμού και οι διαδικτυακές αποδείξεις πληρωμής σας"
                                   }
                               }
                           },
@@ -1269,7 +1321,7 @@
       {
         "pageData": {
             "url": "applictation-review",
-            "title" : {"en": "Page 1", "el": "Στοιχεία της αίτησης "},
+            "title" : {"en": "Page 1", "el": "Στοιχεία της αίτησης"},
             "layout" : "layouts/govcyBase.njk", 
             "mainLayout" : "max-width"
         },
@@ -1374,39 +1426,39 @@
                                         "key":{"en":"key","el":"Στοιχεία αιτητή"},
                                         "value":
                                         [
-                                            {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Όνομα</dt><dd class=\"govcy-summary-list-value-internal\">ΑΝΔΡΕΑΣ ΑΝΔΡΕΟΥ</dd><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία Γέννησης</dt><dd class=\"govcy-summary-list-value-internal\">1/3/1970</dd></dl>"} } }
+                                            {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Όνομα</dt><dd class=\"govcy-summary-list-value-internal\">ΑΝΔΡΕΑΣ ΑΝΔΡΕΟΥ</dd><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία Γέννησης</dt><dd class=\"govcy-summary-list-value-internal\">13/3/1970</dd></dl>"} } }
                                         ]
                                     },
                                     {
-                                        "key":{"en":"key","el":"Σχέση με το άτομο που γίνεται ο έλεγχος"},
+                                        "key":{"en":"key","el":"Το άτομο που ερευνάτε είναι για εσάς:"},
                                         "value":
                                         [
                                             {"element":"htmlElement","params":{"text":{"en":"value","el":"Παππούς"} } }
                                         ]
                                     },
                                     {
-                                        "key":{"en":"key","el":"Στοιχεία ατόμου που αναζητείτε"},
+                                        "key":{"en":"key","el":"Πληροφορίες για το άτομο που ερευνάτε"},
                                         "value":
                                         [
-                                            {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Όνομα</dt><dd class=\"govcy-summary-list-value-internal\">ΔΗΜΗΤΡΗΣ</dd><dt class=\"govcy-summary-list-key-internal\">Επώνυμο</dt><dd class=\"govcy-summary-list-value-internal\">ΑΝΔΡΕΟΥ</dd><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία Γέννησης</dt><dd class=\"govcy-summary-list-value-internal\">1/4/1930</dd><dt class=\"govcy-summary-list-key-internal\">Τόπος γεννήσεως</dt><dd class=\"govcy-summary-list-value-internal\">Πύργος</dd></dl>"} } }
+                                            {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Όνομα</dt><dd class=\"govcy-summary-list-value-internal\">ΔΗΜΗΤΡΗΣ</dd><dt class=\"govcy-summary-list-key-internal\">Επώνυμο</dt><dd class=\"govcy-summary-list-value-internal\">ΑΝΔΡΕΟΥ</dd><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία γέννησης</dt><dd class=\"govcy-summary-list-value-internal\">1/4/1930</dd><dt class=\"govcy-summary-list-key-internal\">Τόπος γέννησης</dt><dd class=\"govcy-summary-list-value-internal\">Πύργος</dd></dl>"} } }
                                         ]
                                     },
                                     {
-                                        "key":{"en":"key","el":"Αριθμός Κυπριακής ταυτότητας ή διαβατηρίου του ατόμου που αναζητείτε"},
+                                        "key":{"en":"key","el":"Αριθμός κυπριακής ταυτότητας ή διαβατηρίου"},
                                         "value":
                                         [
                                             {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Αριθμός ταυτότητας</dt><dd class=\"govcy-summary-list-value-internal\">123456789</dd><dt class=\"govcy-summary-list-key-internal\">Αριθμός διαβατηρίου</dt><dd class=\"govcy-summary-list-value-internal\">123456789</dd><dt class=\"govcy-summary-list-key-internal\">Έτος έκδοσης διαβατηρίου</dt><dd class=\"govcy-summary-list-value-internal\">1970</dd></dl>"} } }
                                         ]
                                     },
                                     {
-                                        "key":{"en":"key","el":"Επιπλέον στοιχεία  για το άτομο που αναζητείτε"},
+                                        "key":{"en":"key","el":"Επιπλέον στοιχεία"},
                                         "value":
                                         [
-                                            {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία θανάτου (αν είναι αποθανόν)</dt><dd class=\"govcy-summary-list-value-internal\">1/3/2000</dd><dt class=\"govcy-summary-list-key-internal\">Ονοματεπώνυμο πατέρα</dt><dd class=\"govcy-summary-list-value-internal\">Γιώργος Ανδρέου</dd><dt class=\"govcy-summary-list-key-internal\">Ονοματεπώνυμο μητέρας</dt><dd class=\"govcy-summary-list-value-internal\">Ελένη Αδρέου</dd><dt class=\"govcy-summary-list-key-internal\">Έτος μετάβασης στο Εξωτερικό (αν ισχύει)</dt><dd class=\"govcy-summary-list-value-internal\">1970</dd></dl>"} } }
+                                            {"element":"htmlElement","params":{"text":{"en":"value","el":"<dl class=\"govcy-summary-list-row-internal\"><dt class=\"govcy-summary-list-key-internal\">Ημερομηνία θανάτου</dt><dd class=\"govcy-summary-list-value-internal\">1/3/2000</dd><dt class=\"govcy-summary-list-key-internal\">Ονοματεπώνυμο πατέρα</dt><dd class=\"govcy-summary-list-value-internal\">Γιώργος Ανδρέου</dd><dt class=\"govcy-summary-list-key-internal\">Ονοματεπώνυμο μητέρας</dt><dd class=\"govcy-summary-list-value-internal\">Ελένη Αδρέου</dd><dt class=\"govcy-summary-list-key-internal\">Έτος μετάβασης στο Εξωτερικό</dt><dd class=\"govcy-summary-list-value-internal\">1970</dd></dl>"} } }
                                         ]
                                     },
                                     {
-                                        "key":{"en":"key","el":"Άλλα στοιχεία  για το άτομο που αναζητείτε"},
+                                        "key":{"en":"key","el":"Άλλες πληροφορίες"},
                                         "value":
                                         [
                                             {"element":"htmlElement","params":{"text":{"en":"value","el":"Οι φίλοι του τον φώναζαν Μίτσαρα"} } }
@@ -1429,7 +1481,7 @@
     {
         "pageData": {
             "url": "applicant",
-            "title" : {"en": "Page 1", "el": "Στοιχεία ατόμου που ζητά την έρευνα"},
+            "title" : {"en": "Page 1", "el": "Δώστε μας τα στοιχεία σας"},
             "layout" : "layouts/govcyBase.njk", 
             "mainLayout" : "two-thirds"
         },
@@ -1458,7 +1510,7 @@
                                         "params": {
                                             "text": {
                                                 "en": "Select",
-                                                "el": "Στοιχεία ατόμου που ζητά την έρευνα"
+                                                "el": "Δώστε μας τα στοιχεία σας"
                                             },
                                             "type": "h1"
                                         }
@@ -4333,22 +4385,13 @@
                                         }
                                     },
                                     {
-                                        "element": "textElement",
-                                        "params": {
-                                            "text": {
-                                                "en": "Text",
-                                                "el": "Μπορεί να σας ζητήσουμε στοιχεία για να αποδείξετε την σχέση σας με το πρόσωπο αυτό."
-                                            }
+                                      "element": "htmlElement",
+                                      "params": {
+                                        "text": {
+                                          "en": "",
+                                          "el": "<fieldset class=\"govcy-fieldset\" role=\"group\" aria-describedby=\"birthdate-hint\"><legend class=\"govcy-legend\">Ημερομηνία γέννησης</legend><div class=\"govcy-form-control\"><span class=\"govcy-hint\" id=\"birthdate-hint\">Για παράδειγμα, 13 8 2007</span><div class=\"govcy-d-flex govcy-flex-wrap\"><div class=\"govcy-d-block govcy-mr-3\"><label class=\"govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2\" for=\"day_2\">Day</label><input id=\"day_2\" class=\"govcy-text-input govcy-text-input-char_3\" maxlength=\"2\" type=\"text\" pattern=\"[0-9]*\" inputmode=\"numeric\"></div><div class=\"govcy-d-block govcy-mr-3\"><label class=\"govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2\" for=\"month_2\">Month</label><select id=\"month_2\" class=\"govcy-select\"><option value=\"\" selected=\"\"></option><option value=\"1\">1 - Ιανουάριος</option><option value=\"2\">2 - Φεβρουάριος</option><option value=\"3\">3 - Μάρτιος</option><option value=\"4\">4 - Απρίλιος</option><option value=\"5\">5 - Μάϊος</option><option value=\"6\">6 - Ιούνιος</option><option value=\"7\">7 - Ιούλιος</option><option value=\"8\">8 - Αύγουστος</option><option value=\"9\">9 - Σεπτέμβριος</option><option value=\"10\">10 - Οκτώβριος</option><option value=\"11\">11 - Νοέμβριος</option><option value=\"12\">12 - Δεκέμβριος</option></select></div><div class=\"govcy-d-block govcy-mr-3\"><label class=\"govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2\" for=\"year_2\">Year</label><input id=\"year_2\" class=\"govcy-text-input govcy-text-input-char_6\" placeholder=\"\" maxlength=\"4\" type=\"text\" pattern=\"[0-9]*\" inputmode=\"numeric\"></div></div></div></fieldset>"
                                         }
-                                    },
-                                    {
-                                        "element": "htmlElement",
-                                        "params": {
-                                            "text": {
-                                                "en": "",
-                                                "el": "<fieldset class=\"govcy-fieldset\" role=\"group\" aria-describedby=\"birthdate-hint\"><legend class=\"govcy-legend\">Ημερ. γέννησης</legend><div class=\"govcy-form-control\"><span class=\"govcy-hint\" id=\"birthdate-hint\">Για παράδειγμα, 13 8 2007</span><div class=\"govcy-d-flex govcy-flex-wrap\"><div class=\"govcy-d-block govcy-mr-3\"><label class=\"govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2\" for=\"day_2\">Day</label><input id=\"day_2\" class=\"govcy-text-input govcy-text-input-char_3\" maxlength=\"2\" type=\"text\" pattern=\"[0-9]*\" inputmode=\"numeric\"></div><div class=\"govcy-d-block govcy-mr-3\"><label class=\"govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2\" for=\"month_2\">Month</label><select id=\"month_2\" class=\"govcy-select\"><option value=\"\" selected=\"\"></option><option value=\"1\">1 - Ιανουάριος</option><option value=\"2\">2 - Φεβρουάριος</option><option value=\"3\">3 - Μάρτιος</option><option value=\"4\">4 - Απρίλιος</option><option value=\"5\">5 - Μάϊος</option><option value=\"6\">6 - Ιούνιος</option><option value=\"7\">7 - Ιούλιος</option><option value=\"8\">8 - Αύγουστος</option><option value=\"9\">9 - Σεπτέμβριος</option><option value=\"10\">10 - Οκτώβριος</option><option value=\"11\">11 - Νοέμβριος</option><option value=\"12\">12 - Δεκέμβριος</option></select></div><div class=\"govcy-d-block govcy-mr-3\"><label class=\"govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2\" for=\"year_2\">Year</label><input id=\"year_2\" class=\"govcy-text-input govcy-text-input-char_6\" placeholder=\"\" maxlength=\"4\" type=\"text\" pattern=\"[0-9]*\" inputmode=\"numeric\"></div></div></div></fieldset>"
-                                            }
-                                        }
+                                      }
                                     },
                                     {
                                         "element": "button",
