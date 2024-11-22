@@ -101,13 +101,27 @@ module.exports = function (eleventyConfig) {
     //copy `js`
     eleventyConfig.addPassthroughCopy("./src/js");
 
+    //add markdown support for njk files
+    const markdownIt = require("markdown-it");
+    const md = markdownIt({ html: true });
+    eleventyConfig.addNunjucksFilter("markdown", (content) => {
+        return md.render(content);
+      });
+
+    // Add a custom Markdown shortcode
+    eleventyConfig.addPairedShortcode("markdown", (content) => {
+        return md.render(content); // Render raw HTML
+      });
     
     // Specify input and output directories
     return {
         dir: {
             input: "src",
             output: "docs"
-        }
+        },
+        markdownTemplateEngine: "njk", // Use Nunjucks for Markdown
+        htmlTemplateEngine: "njk",    // Use Nunjucks for HTML
+        templateFormats: ["md", "njk"], // Supported file formats
     };
 
 };

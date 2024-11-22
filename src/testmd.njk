@@ -1,0 +1,81 @@
+---js
+{
+  title: "My Markdown Page",
+    site: {
+        "lang": "el",
+        "title" : {"en":"Service title", "el":"Τιτλός υπηρεσίας"}, 
+        "headerTitle" : {"en":"Header title", "el":"Τιτλός επικεφαλιδας"},
+        "description" : {"en":"Service description", "el":"Περιγραφή υπηρεσίας"},
+        "isTesting" : true,
+        "url": "https://gov.cy",
+        "cdn": {
+            "dist": "https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@3.0.0/dist",
+            "cssIntegrity": "sha384-1zLHWOtnS0hOIz5mVEPZp0UH5gUE6eo0CQcCGA3sF2TyYhHyKOd3Ni8Iy/NjEASU",
+            "jsIntegrity": "sha384-zOuDuogVaaTveh/Ou2iYwCk14zFiSmMk7Ax8yRnXDtOJMyKZH5+ZNibNVwZSKtw+"
+        }   
+    },  
+    "pageData": {
+        "title": {"en": "Page title", "el": "Τιτλός σελιδας"},
+        "layout": "layouts/govcyBase.njk",
+        "mainLayout": "two-thirds"
+    }
+}
+---
+{% extends '../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
+
+
+{% block main %}
+{% markdown %}
+# Επόμενα βήματα
+
+## Τι πρέπει να κάνω
+{% endmarkdown %}
+<div class="govcy-accordion govcy-accordion-steps govcy-mb-0">
+    <div class="govcy-accordion-item">
+        <div class="govcy-accordion-step">1</div>
+        <h3 class="govcy-pt-4" id="headingStepAndOne">
+            <span class="govcy-visually-hidden-error">Βήμα 1, </span>Κλείστε ραντεβού
+        </h3>
+        <div id="collapseStepAndOne">
+            <p>Θα χρειαστεί να δώσετε δακτυλικά αποτυπώματα και να βγάλετε φωτογραφία. Για αυτό, θα χρειαστεί να κλείσετε ραντεβού και να πάτε σε οποιοδήποτε <a href="https://www.moi.gov.cy/moi/CR/cr.nsf/All/06602D843A89F1C4C22587AE002E3F52?OpenDocument">σημείο εξυπηρέτησης</a>. Μπορείτε να κλείσετε το ραντεβού και αργότερα.</p>
+        </div>
+    </div>
+    <div class="govcy-accordion-item">
+        <div class="govcy-accordion-step">2</div>
+        <h3 class="govcy-pt-4" id="headingStepAndTwo">
+                <span class="govcy-visually-hidden-error">Βήμα 2, </span>Επιλέξτε σημείο παραλαβής
+        </h3>
+        <div id="collapseStepAndTwo">
+                <p>Όταν θα είναι έτοιμη η ταυτότητα, θα χρειαστεί να πάτε για να την πάρετε.</p>
+{% from "../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
+
+{% call govcyElement("form",{
+        "elements":[
+            {"element": "radios",
+            "params": {
+                "id":"cy-radio"
+                ,"name":"cy-radio"
+                ,"lang":"el"
+                ,"legend":{"en":"English legend","el":"Πού προτιμάτε να πάτε;"}
+                ,"items":[
+                    {
+                        "value": "cy",
+                        "text": {"en":"CY","el":"Στην Κύπρο"}
+                    },
+                    {
+                        "value": "abroad",
+                        "text": {"en":"Abroad","el":"Στο εξωτερικό"}
+                    }
+                ]
+                }
+            }
+    ]
+    }) %}{% endcall %}
+        </div>
+    </div>
+</div>
+
+{{govcyElement("button",{text:{en:"Continue",el:"Συνέχεια"},type:"submit"} ) }}
+
+
+{% endblock %}
