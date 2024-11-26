@@ -113,6 +113,18 @@ module.exports = function (eleventyConfig) {
         return md.render(content); // Render raw HTML
       });
     
+
+      // Add the merge filter
+    eleventyConfig.addFilter("merge", (obj1, obj2) => {
+        if (Array.isArray(obj1) && Array.isArray(obj2)) {
+        return [...obj1, ...obj2]; // Merge arrays
+        } else if (typeof obj1 === "object" && typeof obj2 === "object") {
+        return { ...obj1, ...obj2 }; // Merge objects
+        } else {
+        throw new Error("merge filter requires two arrays or two objects");
+        }
+    });
+
     // Specify input and output directories
     return {
         dir: {

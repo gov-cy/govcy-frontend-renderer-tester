@@ -23,30 +23,30 @@
 ---
 {% extends '../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/layouts/govcyBase.njk' %}
 
-
 {% block main %}
 {% markdown %}
 # Επόμενα βήματα
 
 ## Τι πρέπει να κάνω
+
 {% endmarkdown %}
 <div class="govcy-accordion govcy-accordion-steps govcy-mb-0">
     <div class="govcy-accordion-item">
         <div class="govcy-accordion-step">1</div>
-        <h3 class="govcy-pt-4" id="headingStepAndOne">
-            <span class="govcy-visually-hidden-error">Βήμα 1, </span>Κλείστε ραντεβού
-        </h3>
-        <div id="collapseStepAndOne">
+        <h3 class="govcy-pt-4">
+            <span class="govcy-visually-hidden">Βήμα 1, </span>Κλείστε ραντεβού
+        </h3> 
+        <div>
             <p>Θα χρειαστεί να δώσετε δακτυλικά αποτυπώματα και να βγάλετε φωτογραφία. Για αυτό, θα χρειαστεί να κλείσετε ραντεβού και να πάτε σε οποιοδήποτε <a href="https://www.moi.gov.cy/moi/CR/cr.nsf/All/06602D843A89F1C4C22587AE002E3F52?OpenDocument">σημείο εξυπηρέτησης</a>. Μπορείτε να κλείσετε το ραντεβού και αργότερα.</p>
         </div>
     </div>
     <div class="govcy-accordion-item">
         <div class="govcy-accordion-step">2</div>
-        <h3 class="govcy-pt-4" id="headingStepAndTwo">
-                <span class="govcy-visually-hidden-error">Βήμα 2, </span>Επιλέξτε σημείο παραλαβής
+        <h3 class="govcy-pt-4">
+                <span class="govcy-visually-hidden">Βήμα 2, </span>Επιλέξτε σημείο παραλαβής
         </h3>
-        <div id="collapseStepAndTwo">
-                <p>Όταν θα είναι έτοιμη η ταυτότητα, θα χρειαστεί να πάτε για να την πάρετε.</p>
+        <div>
+            <p>Όταν θα είναι έτοιμη η ταυτότητα, θα χρειαστεί να πάτε για να την πάρετε.</p>
 {% from "../node_modules/@gov-cy/govcy-frontend-renderer/src/njk/govcyElement.njk" import govcyElement %}
 
 {% call govcyElement("form",{
@@ -60,7 +60,18 @@
                 ,"items":[
                     {
                         "value": "cy",
-                        "text": {"en":"CY","el":"Στην Κύπρο"}
+                        "text": {"en":"CY","el":"Στην Κύπρο"},
+                        "conditionalElements": [
+                            {
+                                "element": "textInput",
+                                "params": {
+                                    "id":"inPassport"
+                                    ,"name":"inPassport"
+                                    ,"fixedWidth":"10"
+                                    ,"label":{"en":"Conditional element","el":"Ελληνικά conditional element"}
+                                }
+                            }
+                        ]
                     },
                     {
                         "value": "abroad",
